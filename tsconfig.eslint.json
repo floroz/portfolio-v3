@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src", "pages", "nuxt.config.ts", ".eslintrc.js", "**/*.vue"],
+  "exclude": ["node_modules/**"]
+}
