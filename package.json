@@ -11,13 +11,14 @@
   },
   "private": true,
   "scripts": {
-    "lint": "TIMING=10 eslint . --ext .js,.ts,.tsx,.vue,.html --max-warnings=0 --ignore-path .gitignore",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "lint": "TIMING=10 eslint . --ext .js,.ts,.tsx,.vue,.html --max-warnings=0 --ignore-path .gitignore",
+    "postinstall": "nuxt prepare",
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "nuxt prepare"
+    "prepare": "husky install",
+    "preview": "nuxt preview"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
