@@ -1,0 +1,23 @@
+{
+  "name": "@floroz/portfolio-v3",
+  "author": {
+    "name": "Daniele Tortora",
+    "email": "contact@danieletortora.com",
+    "url": "https://www.danieletortora.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": ""
+  },
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.2.3"
+  }
+}
