@@ -7,3 +7,6 @@ node_modules
 .env
 dist
 .DS_Store
+
+# Because the project uses PNPM, this is another security check to avoid introducing NPM
+package-lock.json

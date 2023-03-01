@@ -15,9 +15,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "nuxt": "^3.2.3"
-  }
+  },
+  "engines": {
+    "node": ">=18.12",
+    "pnpm": ">7.28"
+  },
+  "packageManager": "pnpm@7.28.0"
 }
