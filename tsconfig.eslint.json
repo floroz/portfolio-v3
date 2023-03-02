@@ -1,5 +1,5 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src", "pages", "nuxt.config.ts", ".eslintrc.js", "**/*.vue", "commitlint.config.js"],
+  "include": ["src", "pages", "nuxt.config.ts", ".eslintrc.js", "**/*.vue", "commitlint.config.js", "tailwind.config.js"],
   "exclude": ["node_modules/**"]
 }

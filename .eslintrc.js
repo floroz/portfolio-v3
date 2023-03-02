@@ -29,5 +29,12 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
   },
-  overrides: [],
+  overrides: [
+    {
+      files: "pages/**/*.vue",
+      rules: {
+        "vue/multi-word-component-names": "off",
+      },
+    },
+  ],
 };
