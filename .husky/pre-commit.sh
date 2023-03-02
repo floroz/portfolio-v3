@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-if [ -t 1 ]; then exec 1>/dev/console; fi
-if [ -t 2 ]; then exec 2>/dev/console; fi
-FORCE_COLOR=1 pnpm lint-staged
