@@ -1,0 +1,38 @@
+name: run
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.12]
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.28.0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Unit Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build
