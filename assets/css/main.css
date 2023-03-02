@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 
-:root, html {
+* {
   font-family: "Outfit", sans-serif;
 }
 
 body {
-   @apply bg-slate-900 bg-body-bg bg-no-repeat bg-center
+   @apply bg-zinc-900 bg-body-bg bg-center bg-repeat
 }
 
 @layer {
   .text-gradient {
     @apply bg-gradient-to-r from-gray-300 to-gray-600 bg-clip-text text-transparent
+  }
+  .text-primary {
+    @apply text-zinc-400 text-sm
   }
 }
