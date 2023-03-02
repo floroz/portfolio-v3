@@ -54,5 +54,8 @@
     "**/*.{js,ts,tsx,vue,html,css,scss}": [
       "pnpm lint"
     ]
+  },
+  "dependencies": {
+    "nuxt-icon": "^0.3.2"
   }
 }

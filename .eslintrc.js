@@ -24,12 +24,20 @@ module.exports = {
     "plugin:unicorn/all",
     "plugin:prettier/recommended",
   ],
-  plugins: ["vitest"],
+  plugins: ["@typescript-eslint", "vitest"],
   ignorePatterns: ["node_modules/**"],
   rules: {
     "prettier/prettier": "error",
-    // vue3 not needed
     "vue/no-multiple-template-root": "off",
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        allowList: {
+          prop: true,
+          Prop: true,
+        },
+      },
+    ],
   },
   overrides: [
     {
