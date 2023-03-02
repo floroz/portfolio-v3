@@ -28,6 +28,8 @@ module.exports = {
   ignorePatterns: ["node_modules/**"],
   rules: {
     "prettier/prettier": "error",
+    // vue3 not needed
+    "vue/no-multiple-template-root": "off",
   },
   overrides: [
     {

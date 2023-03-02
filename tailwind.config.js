@@ -11,7 +11,11 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "body-bg": "url(/svgs/bg.svg)",
+      },
+    },
   },
   plugins: [],
 };
