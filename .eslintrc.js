@@ -24,7 +24,7 @@ module.exports = {
     "plugin:unicorn/all",
     "plugin:prettier/recommended",
   ],
-  plugins: [],
+  plugins: ["vitest"],
   ignorePatterns: ["node_modules/**"],
   rules: {
     "prettier/prettier": "error",
