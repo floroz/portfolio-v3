@@ -5,7 +5,7 @@
 <template>
   <!-- Spacer Div -->
   <div class="w-full h-16 md:h-32" />
-  <div class="p-4 flex flex-col gap-y-8 items-center">
+  <section class="p-4 max-page-width m-auto flex flex-col gap-y-8 items-center">
     <!-- Avatar -->
     <NuxtImg
       preload
@@ -33,5 +33,5 @@
         />
       </template>
     </BaseButton>
-  </div>
+  </section>
 </template>

@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <footer class="header-styled border-t border-zinc-700 flex items-center">
+  <footer
+    class="header-styled max-page-width border-t border-zinc-700 flex items-center"
+  >
     <div class="flex justify-between items-center w-full">
       <div class="text-primary">
         <p>
