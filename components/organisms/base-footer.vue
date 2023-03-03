@@ -4,9 +4,9 @@
 
 <template>
   <footer
-    class="header-styled max-page-width border-t border-zinc-700 flex items-center"
+    class="header-styled max-page-width flex items-center border-t border-zinc-700"
   >
-    <div class="flex justify-between items-center w-full">
+    <div class="flex w-full items-center justify-between">
       <div class="text-primary">
         <p>
           © 2023 All rights reserved.

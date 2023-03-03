@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <button
-    class="flex items-center gap-x-2 py-4 px-8 rounded-md bg-zinc-800 hover:scale-95 transition-transform duration-150 ease-out"
+    class="flex items-center gap-x-2 rounded-md bg-zinc-800 py-4 px-8 transition-transform duration-150 ease-out hover:scale-95"
   >
     <span
       v-if="$slots['icon-left']"

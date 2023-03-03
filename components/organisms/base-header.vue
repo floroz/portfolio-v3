@@ -4,15 +4,15 @@
 <template>
   <header class="header-styled max-page-width border-b border-zinc-700">
     <nav>
-      <ul class="flex items-center gap-x-6 w-full h-full">
-        <li class="text-primary flex-grow">
+      <ul class="flex h-full w-full items-center gap-x-6">
+        <li class="text-primary grow">
           <NuxtLink
             to="mailto:contact@danieletortora.com"
             aria-label="Get in touch via email"
-            class="cursor-pointer text-primary hover:text-zinc-200"
+            class="text-primary cursor-pointer hover:text-zinc-200"
           >
-            <div class="flex gap-2 items-center">
-              <div class="rounded-full p-4 bg-zinc-800">
+            <div class="flex items-center gap-2">
+              <div class="rounded-full bg-zinc-800 p-4">
                 <Icon
                   name="fe:mail"
                   size="24"
