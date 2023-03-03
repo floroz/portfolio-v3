@@ -12,6 +12,7 @@ specifiers:
   eslint: ^8.35.0
   eslint-config-prettier: ^8.6.0
   eslint-plugin-prettier: ^4.2.1
+  eslint-plugin-tailwindcss: ^3.10.1
   eslint-plugin-unicorn: ^45.0.2
   eslint-plugin-vitest: ^0.0.53
   eslint-plugin-vue: ^9.9.0
@@ -42,6 +43,7 @@ devDependencies:
   eslint: 8.35.0
   eslint-config-prettier: 8.6.0_eslint@8.35.0
   eslint-plugin-prettier: 4.2.1_u2zha4kiojzs42thzpgwygphmy
+  eslint-plugin-tailwindcss: 3.10.1_tailwindcss@3.2.7
   eslint-plugin-unicorn: 45.0.2_eslint@8.35.0
   eslint-plugin-vitest: 0.0.53_ycpbpc6yetojsgtrx3mwntkhsu
   eslint-plugin-vue: 9.9.0_eslint@8.35.0
@@ -4140,6 +4142,17 @@ packages:
       eslint: ^7.0.0 || ^8.0.0
     dependencies:
       eslint: 8.35.0
+    dev: true
+
+  /eslint-plugin-tailwindcss/3.10.1_tailwindcss@3.2.7:
+    resolution: {integrity: sha512-NLPZ6b6nd/8CgGNMQ6NDiPUfBLQpSGu/u9RyX3MCZOwzNs2dFt1OamNAiRuo3Ixh7Gv4t5UcAcdNt8z74UDJkA==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: ^3.2.2
+    dependencies:
+      fast-glob: 3.2.12
+      postcss: 8.4.21
+      tailwindcss: 3.2.7_postcss@8.4.21
     dev: true
 
   /eslint-plugin-unicorn/44.0.2_eslint@8.35.0:

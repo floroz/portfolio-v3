@@ -21,6 +21,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:vue/vue3-recommended",
+    "plugin:tailwindcss/recommended",
     "plugin:unicorn/all",
     "plugin:prettier/recommended",
   ],
