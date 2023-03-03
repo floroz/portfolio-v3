@@ -25,7 +25,7 @@
   <li
     v-for="(link, index) in LINKS"
     :key="link.id"
-    class="cursor-pointer text-primary hover:text-zinc-200"
+    class="text-primary cursor-pointer hover:text-zinc-200"
   >
     <NuxtLink
       :to="link.href"
