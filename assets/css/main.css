@@ -20,4 +20,7 @@ body {
   .text-primary {
     @apply text-zinc-400 text-sm
   }
+  .header-styled {
+    @apply max-w-4xl p-4 min-h-[5rem]  m-auto
+  }
 }

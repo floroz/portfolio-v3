@@ -1,14 +1,10 @@
 <script setup lang="ts">
   import BaseButton from "~/components/atoms/base-button/base-button.vue";
-  import MetaLogo from "~/assets/svg/meta.svg";
-  import TundraLogo from "~/assets/svg/tundra.svg";
-  import OvoLogo from "~/assets/svg/ovo.svg";
-  import TrayLogo from "~/assets/svg/tray.svg";
 </script>
 
 <template>
   <!-- Spacer Div -->
-  <div class="w-full h-24 md:h-32" />
+  <div class="w-full h-16 md:h-32" />
   <div class="p-4 flex flex-col gap-y-8 items-center">
     <!-- Avatar -->
     <NuxtImg
@@ -37,12 +33,5 @@
         />
       </template>
     </BaseButton>
-  </div>
-  <!-- Company Section TO EXTRACT -->
-  <div class="text-primary">
-    <MetaLogo class="text-primary w-[240px]" />
-    <TrayLogo class="text-primary w-[240px]" />
-    <OvoLogo class="text-primary w-[240px]" />
-    <TundraLogo class="text-primary w-[240px]" />
   </div>
 </template>
