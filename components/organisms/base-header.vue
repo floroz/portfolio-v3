@@ -2,7 +2,7 @@
   import SocialLinks from "~/components/molecules/social-links.vue";
 </script>
 <template>
-  <header class="header-styled border-b border-zinc-700">
+  <header class="header-styled max-page-width border-b border-zinc-700">
     <nav>
       <ul class="flex items-center gap-x-6 w-full h-full">
         <li class="text-primary flex-grow">
