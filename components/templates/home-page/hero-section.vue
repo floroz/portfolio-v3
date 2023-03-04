@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import BaseButton from "~/components/atoms/base-button/base-button.vue";
+  import BaseButtonLink from "~~/components/atoms/base-button-link/base-button-link.vue";
 </script>
 
 <template>
@@ -24,7 +24,9 @@
       creating <br class="hidden md:inline-block" />delightful experiences.
     </h1>
     <!-- CTA -->
-    <BaseButton
+    <BaseButtonLink
+      href="https://github.com/floroz"
+      target="_blank"
       ><template #default>Check my work</template>
       <template #icon-right>
         <Icon
@@ -32,6 +34,6 @@
           size="24"
         />
       </template>
-    </BaseButton>
+    </BaseButtonLink>
   </section>
 </template>

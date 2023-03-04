@@ -4,9 +4,9 @@
 </script>
 
 <template>
-  <div class="h-auto sm:min-h-screen">
+  <div class="flex h-auto flex-col justify-start sm:min-h-screen">
     <BaseHeader />
-    <main>
+    <main class="grow">
       <slot />
     </main>
     <BaseFooter />
