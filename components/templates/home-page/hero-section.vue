@@ -7,12 +7,17 @@
   <div class="h-16 w-full md:h-32" />
   <section class="max-page-width m-auto flex flex-col items-center gap-y-8 p-4">
     <!-- Avatar -->
-    <NuxtImg
+    <!-- Current Issue in using this plugin in production: https://github.com/nuxt/image/issues/689#issuecomment-1455065750 -->
+    <!-- <NuxtImg
       preload
       src="/images/profilepic.jpeg"
       width="180"
       height="180"
       class="rounded-full"
+    /> -->
+    <img
+      src="/images/profilepic.jpeg"
+      class="aspect-square h-auto w-36 rounded-full object-cover object-center"
     />
     <!-- header -->
     <p class="text-primary text-center">Hi, I am Daniele 👋🏻</p>
