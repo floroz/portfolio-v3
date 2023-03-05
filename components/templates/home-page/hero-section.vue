@@ -18,7 +18,7 @@
     <!-- header -->
     <p class="text-primary text-center">Hi, I am Daniele 👋🏻</p>
     <!-- title -->
-    <h1 class="text-gradient mb-4 text-center text-4xl md:text-5xl">
+    <h1 class="text-gradient py-2 text-center text-4xl md:text-5xl">
       I love building software, <br class="hidden md:inline-block" />scaling
       teams, and <br class="inline-block sm:hidden" />
       creating <br class="hidden md:inline-block" />delightful experiences.
