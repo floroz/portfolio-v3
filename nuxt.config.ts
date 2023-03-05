@@ -10,15 +10,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  // image: {},
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+      },
       title: siteMetadata.pageTitle,
       meta: [
         { name: "title", content: siteMetadata.pageTitle },
-        { name: "og:title", content: siteMetadata.pageTitle },
         { name: "author", content: "Daniele Tortora" },
-        { name: "twitter:creator:id", content: "@floroz87" },
         {
           name: "keywords",
           content:
@@ -28,6 +28,7 @@ export default defineNuxtConfig({
           name: "description",
           content: siteMetadata.pageDescription,
         },
+        { name: "og:title", content: siteMetadata.pageTitle },
         {
           name: "og:description",
           content: siteMetadata.pageDescription,
@@ -38,6 +39,12 @@ export default defineNuxtConfig({
         },
         {
           name: "og:image",
+          content: "https://www.danieletortora.com/images/twitter-card.png",
+        },
+        { name: "twitter:creator:id", content: "floroz87" },
+        { name: "twitter:description", content: siteMetadata.pageDescription },
+        {
+          name: "twitter:image",
           content: "https://www.danieletortora.com/images/twitter-card.png",
         },
         { name: "application-name", content: "@floroz/portfolio-v3" },
