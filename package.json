@@ -51,7 +51,7 @@
   },
   "engines": {
     "node": ">=18.12",
-    "pnpm": ">=7.28"
+    "pnpm": ">=7"
   },
   "packageManager": "pnpm@7.28.0",
   "lint-staged": {
