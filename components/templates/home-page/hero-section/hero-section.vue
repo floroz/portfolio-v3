@@ -19,6 +19,7 @@
       <img
         src="/images/profilepic.jpeg"
         class="aspect-square w-36 scale-125 rounded-full object-cover object-center"
+        alt="Profile Picture of Daniele Tortora"
       />
     </div>
     <!-- header -->
