@@ -4,7 +4,7 @@
 
 <template>
   <!-- Spacer Div -->
-  <div class="h-16 w-full md:h-32" />
+  <div class="h-12 w-full sm:h-16 md:h-32" />
   <section class="max-page-width m-auto flex flex-col items-center gap-y-8 p-4">
     <!-- Avatar -->
     <!-- Current Issue in using this plugin in production: https://github.com/nuxt/image/issues/689#issuecomment-1455065750 -->
