@@ -15,10 +15,10 @@
       height="180"
       class="rounded-full"
     /> -->
-    <div class="w-36 overflow-hidden rounded-full">
+    <div class="overflow-hidden rounded-full">
       <img
         src="/images/profilepic.jpeg"
-        class="aspect-square w-full scale-125 rounded-full object-cover object-center"
+        class="aspect-square w-36 scale-125 rounded-full object-cover object-center"
       />
     </div>
     <!-- header -->
