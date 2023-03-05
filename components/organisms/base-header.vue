@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import SocialLinks from "~/components/molecules/social-links.vue";
 </script>
+<!-- eslint-disable tailwindcss/no-custom-classname -->
 <template>
   <header class="header-styled max-page-width border-b border-zinc-700">
     <nav>
@@ -9,7 +10,7 @@
           <NuxtLink
             to="mailto:contact@danieletortora.com"
             aria-label="Get in touch via email"
-            class="text-primary cursor-pointer hover:text-zinc-200"
+            class="text-primary animation-appear cursor-pointer opacity-0 hover:text-zinc-200"
           >
             <div class="flex items-center gap-2">
               <div class="rounded-full bg-zinc-800 p-4">
@@ -22,8 +23,23 @@
             </div>
           </NuxtLink>
         </li>
-        <SocialLinks />
+        <SocialLinks animate />
       </ul>
     </nav>
   </header>
 </template>
+
+<style scoped>
+  .animation-appear {
+    animation-name: appear;
+    animation-duration: 450ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: var(--header-animation-delay);
+  }
+  @keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
