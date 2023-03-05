@@ -16,12 +16,12 @@ module.exports = {
     extraFileExtensions: [".vue"],
   },
   extends: [
-    "@nuxtjs/eslint-config-typescript",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:vue/vue3-recommended",
     "plugin:tailwindcss/recommended",
+    "@nuxtjs/eslint-config-typescript",
     "plugin:unicorn/all",
     "plugin:prettier/recommended",
   ],
@@ -43,9 +43,12 @@ module.exports = {
   },
   overrides: [
     {
-      files: "{pages,layouts}/**/*.vue",
+      files: "*.vue",
       rules: {
         "vue/multi-word-component-names": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
       },
     },
   ],

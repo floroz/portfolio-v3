@@ -7,15 +7,15 @@
 
 <template>
   <div
-    class="my-12 w-full flex-col items-center justify-center md:my-16 lg:my-24"
+    class="my-12 flex w-full items-center justify-center bg-zinc-800 md:my-16 lg:my-24"
   >
     <div
-      class="text-primary flex w-full items-center justify-center gap-x-8 bg-zinc-800 p-8"
+      class="text-primary flex w-full max-w-6xl items-center justify-center gap-x-2 p-8 sm:gap-x-4 md:gap-x-8"
     >
-      <MetaLogo class="text-primary w-[250px] p-2 md:w-[150px]" />
-      <TrayLogo class="text-primary w-[160px]" />
-      <OvoLogo class="text-primary w-[140px]" />
-      <TundraLogo class="text-primary w-[175px] p-2" />
+      <MetaLogo class="text-primary w-[11rem]" />
+      <TrayLogo class="text-primary w-[11rem]" />
+      <OvoLogo class="text-primary w-[11rem]" />
+      <TundraLogo class="text-primary w-[11rem]" />
     </div>
   </div>
 </template>

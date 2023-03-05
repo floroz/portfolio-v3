@@ -9,6 +9,10 @@
   letter-spacing: 0.05em;
 }
 
+:root {
+  --header-animation-delay: 250ms;
+}
+
 body {
    @apply bg-zinc-900 bg-body-bg bg-center bg-repeat
 }

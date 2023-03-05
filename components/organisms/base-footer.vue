@@ -21,7 +21,7 @@
         </p>
       </div>
       <ul class="flex items-center gap-x-6">
-        <SocialLinks />
+        <SocialLinks :animate="false" />
       </ul>
     </div>
   </footer>
