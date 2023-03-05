@@ -15,10 +15,12 @@
       height="180"
       class="rounded-full"
     /> -->
-    <img
-      src="/images/profilepic.jpeg"
-      class="aspect-square h-auto w-36 rounded-full object-cover object-center"
-    />
+    <div class="w-36 overflow-hidden rounded-full">
+      <img
+        src="/images/profilepic.jpeg"
+        class="aspect-square w-full scale-125 rounded-full object-cover object-center"
+      />
+    </div>
     <!-- header -->
     <p class="text-primary text-center">Hi, I am Daniele 👋🏻</p>
     <!-- title -->
