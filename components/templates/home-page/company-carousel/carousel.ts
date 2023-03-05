@@ -4,6 +4,7 @@ import MetaLogo from "~/assets/svg/meta.svg";
 import TundraLogo from "~/assets/svg/tundra.svg";
 import OvoLogo from "~/assets/svg/ovo.svg";
 import TrayLogo from "~/assets/svg/tray.svg";
+import HackneyLogo from "~/assets/svg/hackney.svg";
 
 export const useCarousel = () => {
   type CarouselItem = {
@@ -32,6 +33,11 @@ export const useCarousel = () => {
       id: "Tray",
       className: "text-primary w-[11rem]",
       component: markRaw(TrayLogo),
+    },
+    {
+      id: "Hackney",
+      className: "text-primary w-[11rem]",
+      component: markRaw(HackneyLogo),
     },
   ]);
 
