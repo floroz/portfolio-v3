@@ -9,7 +9,6 @@
     <!-- Avatar -->
     <NuxtImg
       preload
-      format="webp"
       src="/images/profilepic.jpeg"
       width="180"
       height="180"
