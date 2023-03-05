@@ -28,8 +28,11 @@ module.exports = {
   plugins: ["@typescript-eslint", "vitest"],
   ignorePatterns: ["node_modules/**"],
   rules: {
+    "@typescript-eslint/no-floating-promises": "off",
     "prettier/prettier": "error",
     "vue/no-multiple-template-root": "off",
+    "unicorn/no-null": "off",
+    "unicorn/no-keyword-prefix": "off",
     "unicorn/prevent-abbreviations": [
       "error",
       {

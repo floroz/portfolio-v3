@@ -5,10 +5,6 @@
     "allowJs": false,
     "allowSyntheticDefaultImports": false,
     "allowUnreachableCode": false,
-    "noImplicitAny": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitUseStrict": true
+    "strict": true
   }
 }
