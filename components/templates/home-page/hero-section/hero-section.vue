@@ -23,7 +23,11 @@
       />
     </div>
     <!-- header -->
-    <p class="text-primary text-center">Hi, I am Daniele 👋🏻</p>
+    <p class="text-primary text-center">
+      Hi, I am Daniele
+      <!-- eslint-disable-next-line tailwindcss/no-custom-classname -->
+      <span class="animate-wave inline-block">👋🏻</span>
+    </p>
     <!-- title -->
     <h1 class="text-gradient py-2 text-center text-4xl md:text-5xl">
       I love building software, <br class="hidden md:inline-block" />scaling
@@ -44,3 +48,38 @@
     </BaseButtonLink>
   </section>
 </template>
+
+<style scoped>
+  .animate-wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+  }
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+</style>
