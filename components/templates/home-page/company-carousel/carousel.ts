@@ -5,6 +5,7 @@ import TundraLogo from "~/assets/svg/tundra.svg";
 import OvoLogo from "~/assets/svg/ovo.svg";
 import TrayLogo from "~/assets/svg/tray.svg";
 import HackneyLogo from "~/assets/svg/hackney.svg";
+import Frontiers from "~/assets/svg/frontiers.svg";
 
 export const useCarousel = () => {
   type CarouselItem = {
@@ -14,15 +15,22 @@ export const useCarousel = () => {
   };
 
   const carousel = ref<CarouselItem[]>([
-    {
-      id: "Meta",
-      className: "text-primary w-[11rem]",
-      component: markRaw(MetaLogo),
-    },
+
+
     {
       id: "Tundra",
       className: "text-primary w-[11rem]",
       component: markRaw(TundraLogo),
+    },
+        {
+      id: "Meta",
+      className: "text-primary w-[11rem]",
+      component: markRaw(MetaLogo),
+    },
+              {
+      id: "Frontiers",
+      className: "text-primary w-[11rem]",
+      component: markRaw(Frontiers),
     },
     {
       id: "Ovo",
@@ -39,6 +47,7 @@ export const useCarousel = () => {
       className: "text-primary w-[11rem]",
       component: markRaw(HackneyLogo),
     },
+
   ]);
 
   function onTick() {
