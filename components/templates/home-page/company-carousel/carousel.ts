@@ -1,16 +1,16 @@
 import { ref, onMounted, onUnmounted, markRaw, nextTick } from "vue";
-import type { Component } from "vue";
-import MetaLogo from "~/assets/svg/meta.svg";
-import TundraLogo from "~/assets/svg/tundra.svg";
-import OvoLogo from "~/assets/svg/ovo.svg";
-import TrayLogo from "~/assets/svg/tray.svg";
-import HackneyLogo from "~/assets/svg/hackney.svg";
-import Frontiers from "~/assets/svg/frontiers.svg";
+import type { FunctionalComponent } from "vue";
+import MetaLogo from "~/assets/svg/meta.svg?component";
+import TundraLogo from "~/assets/svg/tundra.svg?component";
+import OvoLogo from "~/assets/svg/ovo.svg?component";
+import TrayLogo from "~/assets/svg/tray.svg?component";
+import HackneyLogo from "~/assets/svg/hackney.svg?component";
+import Frontiers from "~/assets/svg/frontiers.svg?component";
 
 export const useCarousel = () => {
   type CarouselItem = {
     id: string;
-    component: Component;
+    component: FunctionalComponent;
     className: string;
   };
 

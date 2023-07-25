@@ -70,7 +70,7 @@
           <a href="https://github.com/floroz">GitHub</a>
         </div>
       </section>
-      <section>
+      <section class="mb-4">
         <h3 class="mb-2 uppercase w-full text-md with-border-bottom">
           Work Experience
         </h3>
