@@ -1,53 +1,49 @@
-import { ref, onMounted, onUnmounted, markRaw, nextTick } from "vue";
-import type { FunctionalComponent } from "vue";
-import MetaLogo from "~/assets/svg/meta.svg?component";
-import TundraLogo from "~/assets/svg/tundra.svg?component";
-import OvoLogo from "~/assets/svg/ovo.svg?component";
-import TrayLogo from "~/assets/svg/tray.svg?component";
-import HackneyLogo from "~/assets/svg/hackney.svg?component";
-import Frontiers from "~/assets/svg/frontiers.svg?component";
+import { ref, onMounted, onUnmounted, nextTick } from "vue";
+import MetaLogo from "~/assets/svg/meta.svg";
+import TundraLogo from "~/assets/svg/tundra.svg";
+import OvoLogo from "~/assets/svg/ovo.svg";
+import TrayLogo from "~/assets/svg/tray.svg";
+import HackneyLogo from "~/assets/svg/hackney.svg";
+import Frontiers from "~/assets/svg/frontiers.svg";
 
 export const useCarousel = () => {
   type CarouselItem = {
     id: string;
-    component: FunctionalComponent;
+    component: any;
     className: string;
   };
 
   const carousel = ref<CarouselItem[]>([
-
-
     {
       id: "Tundra",
       className: "text-primary w-[11rem]",
-      component: markRaw(TundraLogo),
+      component: TundraLogo,
     },
-        {
+    {
       id: "Meta",
       className: "text-primary w-[11rem]",
-      component: markRaw(MetaLogo),
+      component: MetaLogo,
     },
-              {
+    {
       id: "Frontiers",
       className: "text-primary w-[11rem]",
-      component: markRaw(Frontiers),
+      component: Frontiers,
     },
     {
       id: "Ovo",
       className: "text-primary w-[11rem]",
-      component: markRaw(OvoLogo),
+      component: OvoLogo,
     },
     {
       id: "Tray",
       className: "text-primary w-[11rem]",
-      component: markRaw(TrayLogo),
+      component: TrayLogo,
     },
     {
       id: "Hackney",
       className: "text-primary w-[11rem]",
-      component: markRaw(HackneyLogo),
+      component: HackneyLogo,
     },
-
   ]);
 
   function onTick() {

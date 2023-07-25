@@ -12,8 +12,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Outfit", 'Roboto', 'Open_Sans', 'sans-serif'],
-    }
+      sans: ["Outfit", "Roboto", "Open_Sans", "sans-serif"],
+    },
   },
   plugins: [],
 };

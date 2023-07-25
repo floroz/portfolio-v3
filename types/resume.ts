@@ -10,4 +10,4 @@ export type WorkEntry = {
 
 export type ResumeSchema = {
   work: WorkEntry[];
-}
+};
