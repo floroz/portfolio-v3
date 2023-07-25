@@ -23,20 +23,13 @@
 </script>
 
 <template>
-  <div class="body">
+  <div class="bg-zinc-900 bg-[image:url(/svgs/bg.svg)] bg-repeat">
     <div class="flex h-auto flex-col justify-start sm:min-h-screen">
-    <BaseHeader />
-    <main class="grow">
-      <slot />
-    </main>
-    <BaseFooter />
-  </div>
+      <BaseHeader />
+      <main class="grow">
+        <slot />
+      </main>
+      <BaseFooter />
+    </div>
   </div>
 </template>
-
-<style scoped>
-.body {
-  @apply bg-zinc-900 bg-center bg-repeat;
-  background-image: url(/svgs/bg.svg);
-}
-</style>

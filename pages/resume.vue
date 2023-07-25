@@ -35,55 +35,74 @@
       },
     ],
   });
+
+  const contactLinks = [
+    {
+      icon: "ant-design:mail-outlined",
+      href: "mailto:contact@danieletortora.com",
+      label: "Email",
+    },
+    {
+      icon: "ant-design:environment-outlined",
+      href: "https://www.google.com/maps/place/Zurich",
+      label: "Zurich, Switzerland",
+    },
+    {
+      icon: "ant-design:link-outlined",
+      href: "https://www.danieletortora.com",
+      label: "Portfolio",
+    },
+    {
+      icon: "ant-design:github-outlined",
+      href: "https://github.com/floroz",
+      label: "GitHub",
+    },
+  ];
 </script>
 
 <template>
   <div
-    class="text-md w-full text-md flex flex-col items-center justify-center py-8 px-16 font-['Open_Sans']"
+    class="flex w-full flex-col items-center justify-center px-16 py-8 font-['Open_Sans'] text-base"
   >
-    <main class="w-full bg-white max-w-4xl">
+    <main class="w-full max-w-4xl bg-white">
       <header
-        class="w-full flex justify-center items-center flex-col gap-0.5 with-border-bottom relative"
+        class="relative flex w-full flex-col items-center justify-center gap-0.5 border-b-[1px] border-b-gray-800 pb-2"
       >
-        <h1 class="font-bold text-2xl font-['Open_Sans']">Daniele Tortora</h1>
-        <h2 class="font-medium text-xl">
+        <h1 class="font-['Open_Sans'] text-2xl font-bold">Daniele Tortora</h1>
+        <h2 class="text-xl font-medium">
           Techical Lead | Senior Frontend Engineer | UX/UI | Accessibility
         </h2>
       </header>
-      <section class="mb-2 py-2 w-full flex flex-wrap justify-evenly gap-x-2 gap-y-1">
-        <div class="link-wrapper">
-          <Icon name="ant-design:mail-outlined" />
-          <a href="mailto:contact@danieletortora.com"
-            >Email</a
-          >
-        </div>
-        <div class="link-wrapper">
-          <Icon name="ant-design:environment-outlined" />
-          <p>Zurich, Switzerland</p>
-        </div>
-        <div class="link-wrapper">
-          <Icon name="ant-design:link-outlined" />
-          <a href="https://www.danieletortora.com">Portfolio</a>
-        </div>
-        <div class="link-wrapper">
-          <Icon name="ant-design:github-outlined" />
-          <a href="https://github.com/floroz">GitHub</a>
+      <section
+        class="mb-2 flex w-full flex-wrap justify-evenly gap-x-2 gap-y-1 py-2"
+      >
+        <div
+          v-for="link in contactLinks"
+          :key="link.href"
+          class="flex flex-row items-center justify-center gap-x-1 text-sm font-bold"
+        >
+          <Icon :name="link.icon" />
+          <a :href="link.href">{{ link.label }}</a>
         </div>
       </section>
       <section class="mb-4">
-        <h3 class="mb-2 uppercase w-full text-md with-border-bottom">
+        <h3
+          class="mb-2 w-full border-b-[1px] border-b-gray-800 pb-2 text-base uppercase"
+        >
           Work Experience
         </h3>
         <WorkSection
           v-for="entry in resumeSchema.work"
-          :entry="entry"
           :key="entry.startDate"
+          :entry="entry"
         />
       </section>
       <section>
-        <h3 class="uppercase with-border-bottom mb-2">Education</h3>
-        <div class="flex flex-col gap-y-0.5 mb-2">
-          <div class="mt-1 flex w-full justify-between text-md">
+        <h3 class="mb-2 border-b-[1px] border-b-gray-800 pb-2 uppercase">
+          Education
+        </h3>
+        <div class="mb-2 flex flex-col gap-y-0.5">
+          <div class="mt-1 flex w-full justify-between text-base">
             <p>Università degli Studi di Napoli Federico II</p>
             <p>Naples, Italy</p>
           </div>
@@ -96,7 +115,7 @@
           </div>
         </div>
         <div class="flex flex-col gap-y-0.5">
-          <div class="flex w-full justify-between text-md">
+          <div class="flex w-full justify-between text-base">
             <p>Università degli Studi di Napoli Federico II</p>
             <p>Naples, Italy</p>
           </div>
@@ -109,14 +128,3 @@
     </main>
   </div>
 </template>
-
-<style scoped>
-
-  .link-wrapper {
-    @apply gap-x-1 flex flex-row items-center justify-center text-sm font-bold;
-  }
-
-  .with-border-bottom {
-    @apply border-b-gray-800 border-b-[1px] pb-2;
-  }
-</style>
