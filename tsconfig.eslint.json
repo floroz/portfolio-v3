@@ -4,10 +4,11 @@
     "**/*.vue",
     "**/*.ts",
     "**/*.js",
-    ".eslintrc.js"
+    "**/*.d.ts",
+    ".eslintrc.js",
+    "env.d.ts"
   ],
   "exclude": [
     "node_modules",
-    ".nuxt"
   ]
 }
