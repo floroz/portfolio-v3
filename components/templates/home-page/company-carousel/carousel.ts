@@ -1,4 +1,11 @@
-import { ref, onMounted, onUnmounted, nextTick } from "vue";
+import {
+  reactive,
+  onMounted,
+  onUnmounted,
+  nextTick,
+  markRaw,
+  DefineComponent,
+} from "vue";
 import MetaLogo from "~/assets/svg/meta.svg";
 import TundraLogo from "~/assets/svg/tundra.svg";
 import OvoLogo from "~/assets/svg/ovo.svg";
@@ -13,41 +20,41 @@ export const useCarousel = () => {
     className: string;
   };
 
-  const carousel = ref<CarouselItem[]>([
+  const carousel = reactive<CarouselItem[]>([
     {
       id: "Tundra",
       className: "text-primary w-[11rem]",
-      component: TundraLogo,
+      component: markRaw(TundraLogo as unknown as DefineComponent),
     },
     {
       id: "Meta",
       className: "text-primary w-[11rem]",
-      component: MetaLogo,
+      component: markRaw(MetaLogo as unknown as DefineComponent),
     },
     {
       id: "Frontiers",
       className: "text-primary w-[11rem]",
-      component: Frontiers,
+      component: markRaw(Frontiers as unknown as DefineComponent),
     },
     {
       id: "Ovo",
       className: "text-primary w-[11rem]",
-      component: OvoLogo,
+      component: markRaw(OvoLogo as unknown as DefineComponent),
     },
     {
       id: "Tray",
       className: "text-primary w-[11rem]",
-      component: TrayLogo,
+      component: markRaw(TrayLogo as unknown as DefineComponent),
     },
     {
       id: "Hackney",
       className: "text-primary w-[11rem]",
-      component: HackneyLogo,
+      component: markRaw(HackneyLogo as unknown as DefineComponent),
     },
   ]);
 
   function onTick() {
-    const first = carousel.value.shift()!;
+    const first = carousel.shift()!;
 
     /**
      * This is necessary to trick the TransitionGroup component
@@ -57,7 +64,7 @@ export const useCarousel = () => {
      */
     first.id = `${Math.random()}`;
 
-    carousel.value.push(first);
+    carousel.push(first);
   }
 
   let interval: ReturnType<typeof setInterval> | null = null;
