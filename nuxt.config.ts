@@ -10,6 +10,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  svgo: {
+    defaultImport: "component",
+  },
   app: {
     head: {
       htmlAttrs: {

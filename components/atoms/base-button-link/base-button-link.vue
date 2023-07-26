@@ -4,7 +4,7 @@
 <template>
   <NuxtLink
     :to="href"
-    class="flex items-center gap-x-2 rounded-md bg-zinc-800 py-4 px-8 transition-transform duration-150 ease-out hover:scale-95"
+    class="flex items-center gap-x-2 rounded-md bg-zinc-800 px-8 py-4 transition-transform duration-150 ease-out hover:scale-95"
   >
     <span
       v-if="$slots['icon-left']"
