@@ -20,7 +20,8 @@
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "preview": "nuxt preview",
-    "test": "vitest"
+    "test": "vitest",
+    "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
