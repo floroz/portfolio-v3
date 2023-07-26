@@ -1,48 +1,60 @@
-import { ref, onMounted, onUnmounted, markRaw, nextTick } from "vue";
-import type { Component } from "vue";
+import {
+  reactive,
+  onMounted,
+  onUnmounted,
+  nextTick,
+  markRaw,
+  DefineComponent,
+} from "vue";
 import MetaLogo from "~/assets/svg/meta.svg";
 import TundraLogo from "~/assets/svg/tundra.svg";
 import OvoLogo from "~/assets/svg/ovo.svg";
 import TrayLogo from "~/assets/svg/tray.svg";
 import HackneyLogo from "~/assets/svg/hackney.svg";
+import Frontiers from "~/assets/svg/frontiers.svg";
 
 export const useCarousel = () => {
   type CarouselItem = {
     id: string;
-    component: Component;
+    component: any;
     className: string;
   };
 
-  const carousel = ref<CarouselItem[]>([
-    {
-      id: "Meta",
-      className: "text-primary w-[11rem]",
-      component: markRaw(MetaLogo),
-    },
+  const carousel = reactive<CarouselItem[]>([
     {
       id: "Tundra",
       className: "text-primary w-[11rem]",
-      component: markRaw(TundraLogo),
+      component: markRaw(TundraLogo as unknown as DefineComponent),
+    },
+    {
+      id: "Meta",
+      className: "text-primary w-[11rem]",
+      component: markRaw(MetaLogo as unknown as DefineComponent),
+    },
+    {
+      id: "Frontiers",
+      className: "text-primary w-[11rem]",
+      component: markRaw(Frontiers as unknown as DefineComponent),
     },
     {
       id: "Ovo",
       className: "text-primary w-[11rem]",
-      component: markRaw(OvoLogo),
+      component: markRaw(OvoLogo as unknown as DefineComponent),
     },
     {
       id: "Tray",
       className: "text-primary w-[11rem]",
-      component: markRaw(TrayLogo),
+      component: markRaw(TrayLogo as unknown as DefineComponent),
     },
     {
       id: "Hackney",
       className: "text-primary w-[11rem]",
-      component: markRaw(HackneyLogo),
+      component: markRaw(HackneyLogo as unknown as DefineComponent),
     },
   ]);
 
   function onTick() {
-    const first = carousel.value.shift()!;
+    const first = carousel.shift()!;
 
     /**
      * This is necessary to trick the TransitionGroup component
@@ -52,7 +64,7 @@ export const useCarousel = () => {
      */
     first.id = `${Math.random()}`;
 
-    carousel.value.push(first);
+    carousel.push(first);
   }
 
   let interval: ReturnType<typeof setInterval> | null = null;
