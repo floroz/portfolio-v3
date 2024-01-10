@@ -1,6 +1,6 @@
 export default {
-  pageTitle: "Daniele Tortora | Software Engineer",
+  pageTitle: "Daniele Tortora | Technical Lead / Senior Frontend Engineer",
   pageDescription:
-    "I am a highly skilled Software Engineer with a passion for creating rich user interfaces and interactive web applications. With a strong focus on usability, accessibility, and inclusiveness, I specialize in translating interaction designs and product concepts into immersive experiences for end users.",
+    "I am a highly skilled Technical Lead and Senior Frontend Engineer with a proven track record of success in building rich user interfaces and interactive web applications. With over 6 years of experience, I specialize in translating interaction design and product concepts into immersive experiences that prioritize usability, accessibility, and inclusivity.",
   siteUrl: "https://www.danieletortora.com",
 };
