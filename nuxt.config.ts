@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         {
           name: "keywords",
           content:
-            "Daniele Tortora, Daniele, Tortora, floroz, floroz87, Software Engineer, Frontend Engineer, Front End Engineer, Front End Developer, developer, software developer, web developer, javascript, zurich, react developer, vue developer",
+            "Daniele Tortora, Daniele, Tortora, floroz, floroz87, Technical Lead, Senior Software Engineer, Senior Frontend Engineer, UX UI, developer, software developer, web developer, javascript, react developer, vue developer",
         },
         {
           name: "description",
