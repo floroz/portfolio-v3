@@ -30,7 +30,7 @@
     </p>
     <!-- title -->
     <h1 class="text-gradient py-2 text-center text-4xl md:text-5xl">
-      I love building software, <br class="hidden md:inline-block" />scaling
+      I love building software, <br class="hidden md:inline-block" />leading
       teams, and <br class="inline-block sm:hidden" />
       creating <br class="hidden md:inline-block" />delightful experiences.
     </h1>

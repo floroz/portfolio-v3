@@ -43,11 +43,6 @@
       label: "Email",
     },
     {
-      icon: "ant-design:environment-outlined",
-      href: "https://www.google.com/maps/place/Zurich",
-      label: "Zurich, Switzerland",
-    },
-    {
       icon: "ant-design:link-outlined",
       href: "https://www.danieletortora.com",
       label: "Portfolio",
@@ -57,6 +52,24 @@
       href: "https://github.com/floroz",
       label: "GitHub",
     },
+    {
+      icon: "ant-design:environment-outlined",
+      href: "https://www.google.com/maps/place/Zurich",
+      label: "Zurich, Switzerland",
+    },
+  ];
+
+  const skills = [
+    "TypeScript",
+    "JavaScript",
+    "HTML/CSS",
+    "React",
+    "Vue",
+    "Angular",
+    "Next.js",
+    "Node.js",
+    "DevOps",
+    "Agile",
   ];
 </script>
 
@@ -65,29 +78,59 @@
     class="flex w-full flex-col items-center justify-center px-16 py-8 font-['Open_Sans'] text-base"
   >
     <main class="w-full max-w-4xl bg-white">
+      <!-- HEADER -->
       <header
-        class="relative flex w-full flex-col items-center justify-center gap-0.5 border-b-[1px] border-b-gray-800 pb-2"
+        class="relative mb-4 flex w-full flex-col items-center justify-center gap-0.5"
       >
         <h1 class="font-['Open_Sans'] text-2xl font-bold">Daniele Tortora</h1>
         <h2 class="text-xl font-medium">
-          Techical Lead | Senior Frontend Engineer | UX/UI | Accessibility
+          Techical Lead | Senior Frontend Engineer | UX/UI / Accessibility
         </h2>
+        <div class="flex flex-nowrap justify-center gap-2">
+          <ul class="flex flex-wrap gap-2">
+            <li
+              v-for="skill in skills"
+              :key="skill"
+              class="flex flex-row flex-nowrap items-center justify-center gap-x-1 text-sm"
+            >
+              <span>&bullet;</span>
+              <span>{{ skill }}</span>
+            </li>
+          </ul>
+        </div>
       </header>
-      <section
-        class="mb-2 flex w-full flex-wrap justify-evenly gap-x-2 gap-y-1 py-2"
-      >
-        <div
-          v-for="link in contactLinks"
-          :key="link.href"
-          class="flex flex-row items-center justify-center gap-x-1 text-sm font-bold"
+
+      <!-- ABOUT -->
+      <section class="mb-2 flex flex-col">
+        <h3
+          class="mb-2 w-full border-b-[1px] border-b-gray-800 pb-2 text-base font-bold uppercase"
         >
-          <Icon :name="link.icon" />
-          <a :href="link.href">{{ link.label }}</a>
+          About
+        </h3>
+        <!-- CONTACT LINS -->
+        <div class="mb-4 flex w-full flex-wrap justify-between gap-x-2 gap-y-1">
+          <div
+            v-for="link in contactLinks"
+            :key="link.href"
+            class="flex flex-row items-center justify-center gap-x-1 text-sm font-bold"
+          >
+            <Icon :name="link.icon" />
+            <a :href="link.href">{{ link.label }}</a>
+          </div>
+        </div>
+        <div class="flex w-full justify-center">
+          <p class="mb-2 max-w-3xl text-sm italic">
+            I am a highly skilled Technical Lead and Senior Frontend Engineer
+            with 7+ years of experience and a proven track record of success in
+            building rich user interfaces and interactive web applications.
+          </p>
         </div>
       </section>
+
+      <!-- WORK SECTION -->
       <section class="mb-4">
         <h3
-          class="mb-2 w-full border-b-[1px] border-b-gray-800 pb-2 text-base uppercase"
+          class="mb-2 w-full border-b-[1px] border-b-gray-800 pb-2 text-base font-bold uppercase"
         >
           Work Experience
         </h3>
@@ -97,31 +140,38 @@
           :entry="entry"
         />
       </section>
+      <!-- EDUCATION SECTION -->
       <section>
-        <h3 class="mb-2 border-b-[1px] border-b-gray-800 pb-2 uppercase">
+        <h3
+          class="mb-2 border-b-[1px] border-b-gray-800 pb-2 font-bold uppercase"
+        >
           Education
         </h3>
-        <div class="mb-2 flex flex-col gap-y-0.5">
-          <div class="mt-1 flex w-full justify-between text-base">
-            <p>Università degli Studi di Napoli Federico II</p>
-            <p>Naples, Italy</p>
+        <div class="text-sm">
+          <div class="mb-2 flex flex-col gap-y-0.5">
+            <div class="mt-1 flex w-full justify-between">
+              <p>Università degli Studi di Napoli Federico II</p>
+              <p>Naples, Italy</p>
+            </div>
+            <div class="flex w-full justify-between">
+              <p>
+                <span class="font-bold">MSc Clinical Psychology</span>. Grade:
+                110/110
+              </p>
+              <p>2012-2015</p>
+            </div>
           </div>
-          <div class="flex w-full justify-between">
-            <p>
-              <span class="font-bold">MSc Clinical Psychology</span>. Grade:
-              110/110
-            </p>
-            <p>2012-2015</p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-y-0.5">
-          <div class="flex w-full justify-between text-base">
-            <p>Università degli Studi di Napoli Federico II</p>
-            <p>Naples, Italy</p>
-          </div>
-          <div class="flex w-full justify-between">
-            <p><span class="font-bold">MSc Psychology</span>. Grade: 110/110</p>
-            <p>2008-2012</p>
+          <div class="flex flex-col gap-y-0.5">
+            <div class="flex w-full justify-between">
+              <p>Università degli Studi di Napoli Federico II</p>
+              <p>Naples, Italy</p>
+            </div>
+            <div class="flex w-full justify-between">
+              <p>
+                <span class="font-bold">MSc Psychology</span>. Grade: 110/110
+              </p>
+              <p>2008-2012</p>
+            </div>
           </div>
         </div>
       </section>
