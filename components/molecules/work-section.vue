@@ -8,7 +8,7 @@
 <template>
   <div class="mb-4 flex flex-col gap-y-1">
     <div class="flex w-full justify-between">
-      <p class="font-bold uppercase">{{ entry.companyName }}</p>
+      <p class="text-sm font-bold uppercase">{{ entry.companyName }}</p>
       <p class="font-bold">{{ entry.startDate }} - {{ entry.endDate }}</p>
     </div>
     <div class="flex w-full justify-between italic">
