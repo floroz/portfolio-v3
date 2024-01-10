@@ -4,31 +4,29 @@ export const resumeSchema: ResumeSchema = {
   work: [
     {
       companyName: "Frontiers",
-      title: "Technical Lead (Design System)",
+      title: "Technical Lead",
       location: "Zurich, Switzerland",
       startDate: "Feb 2023",
       endDate: "Present",
       description: [
-        "Led a team of 6 developers in creating the frontend architecture for the component library based on the Brink Design System. Utilized technologies such as Lerna/NX Monorepo, Vue 3, TypeScript, SCSS (BEM), Cypress, and Percy. Published and distributed the library to other teams via NPM, following semantic versioning and conventional commits.",
-        "Collaborated closely with the Product and Design teams to identify and build UX patterns. Developed a documentation platform using Storybook to showcase and document the component library, and seamlessly integrated it with our ZeroHeight platform.",
-        "Acted as the Accessibility Expert for the team, ensuring comprehensive testing and audits for usability. Ensured compatibility for diverse user needs, including support for keyboard-only users, screen readers, and assistive technologies.",
-        "Played a key role in screening and interviewing candidates for most of the Frontend roles at Frontiers. Successfully identified and hired suitable candidates to strengthen the Design System team. Additionally, provided oversight in hiring frontend engineers for some of Frontiers' outsourced teams.",
-        "Worked in collaboration with other Technical Leads and the Software Architects across the company to strategize and plan the adoption of the new design system across multiple platforms and products.",
+        "Led a team of 6 developers in launching Brink UI, a Vue 3 Component Library built in TypeScript and aligned with our new Design System. In just 5 months, we progressed from inception to the alpha version, which was piloted on multiple projects. Presented the first stable version to the entire Engineering department in October 2023. The adoption led to improved UI component construction time and enhanced overall productivity.",
+        "Collaborated closely with Product and Design teams, leveraging comprehensive research and evaluation of existing solutions and open-source libraries. Led a design refinement process, fostering seamless interactions between Developers and Designers, improving cross-functional collaboration, and accelerating the design-to-development workflow. This approach also cultivated an MVP-oriented mindset among participants.",
+        "Drove the adoption of our new design system across platforms and products, collaborating with Technical Leads and Software Architects. Cultivated an environment of continuous improvement by introducing open-source practices, fostering cross-team collaboration, and implementing comprehensive guidelines that spurred innovative approaches within the frontend engineering department.",
+        "Played a pivotal leadership role in the recruitment process for frontend positions at Frontiers, where I devised a new frontend interview process and stages, ensuring quality and consistency amongst candidates. I was also entrusted with filling all key positions within the department. Additionally, I managed the hiring of frontend engineers for outsourced teams.",
       ],
     },
     {
-      companyName: "Meta / Facebook",
+      companyName: "Meta (Facebook)",
       title: "Frontend Engineer",
       location: "Zurich, Switzerland",
       startDate: "Jun 2022",
       endDate: "Feb 2023",
       isContract: true,
       description: [
-        "Consulted for the Mapillary team, a startup acquired by Meta, to facilitate a smooth transition of their platforms and infrastructure into the Meta web ecosystem. Reviewed previous Meta acquisitions and engaged with key stakeholders to devise integration processes.",
-        "Collaborated with the Mapillary team to identify optimal migration solutions, providing them with a range of options for gradually transitioning their software and products.",
-        "Worked closely with the Design System Teams at Facebook and Instagram to explore possibilities for supporting an independent Design System/Component Library tailored to the Mapillary product line. Investigated the creation of a Headless system based on Facebook's existing component library.",
-        "Took the lead in rewriting the Mapillary website, migrating it from Next.js to the Facebook CMS. This migration resulted in significant improvements to key performance metrics, with Accessibility scores improving by 36%, Performance by 17%, and SEO by 25%. Core Web Vitals also saw significant enhancements, including a 20% reduction in FCP and a 60% reduction in LCP.",
-        "Implemented comprehensive internationalization (i18n) support for the Mapillary web apps (Angular, TypeScript), enabling localization in 24 different languages.",
+        "Collaborated with the Mapillary team, a startup acquired by Meta, to ensure seamless integration of their platforms and infrastructure into Meta’s web ecosystem. This involved studying previous acquisitions by Meta to build effective integration strategies, liaising with key stakeholders, and partnering with the team to identify the best migration solutions. Additionally, provided a solid roadmap for the gradual transitioning of their software and products.",
+        "Cooperated with the Design System Teams at Facebook and Instagram to explore opportunities for deploying an independent Design System/Component Library specifically for Mapillary products. Explored the development of a Headless system built on Facebook’s existing component library.",
+        "Steered the rewriting of the Mapillary website by successfully migrating it from Next.js to the Facebook CMS. This resulted in significant improvements in key performance indicators such as Accessibility scores (improved by 36%), Performance (improved by 17%), and SEO (improved by 25%). Additionally, recorded important advancements in Core Web Vitals, with a 20% reduction in FCP and a 60% reduction in LCP.",
+        "Championed the implementation of internationalization (i18n) support for Mapillary web apps (Angular, TypeScript), enabling efficient localization in 24 diverse languages.",
       ],
     },
     {
@@ -38,9 +36,9 @@ export const resumeSchema: ResumeSchema = {
       startDate: "Nov 2021",
       endDate: "Jun 2022",
       description: [
-        "Led the migration of Tundra.com's e-commerce platform from a client-side to a hybrid rendering model using Next.js. This transition resulted in a significant improvement of approximately 20-40% across all Core Web Vitals metrics. In addition, played a pivotal role in promoting Next.js adoption across frontend teams through workshops, demos, and pair programming.",
-        "Designed the authentication strategy for WholesaleCoop.com, implementing improved web security measures. Developed the entire UI authentication flow on WholesaleCoop.com.",
-        "Spearheaded the adoption of NX for the new WholeSaleCoop product within the Frontend team. Successfully set up the integration between NX and our CI/CD pipeline in CircleCI. This implementation led to a substantial improvement in CI execution time, leveraging the NX Graph, resulting in faster PR to deployment times.",
+        "Pioneered web security improvements on WholesaleCoop.com by designing a refined authentication strategy and implementing the entire UI authentication flow.",
+        "Directed Tundra.com’s e-commerce platform transition from a client-side to a hybrid rendering model using Next.js, yielding a 20-40% rise in Core Web Vitals metrics. Championed Next.js adaptation across frontend teams via workshops, demos, and paired programming.",
+        "Drove the adoption of NX for the new WholeSaleCoop product in the frontend team and integrated NX with our CI/CD pipeline in CircleCI, significantly cutting CI execution time and speeding up PR to deployment phases.",
       ],
     },
     {
@@ -50,7 +48,7 @@ export const resumeSchema: ResumeSchema = {
       startDate: "Jan 2021",
       endDate: "Oct 2021",
       description: [
-        "Migrated the entire Tray Documentation platform from Gatsby to Next.js (React, TypeScript, Node.js). Built a custom compiler integrated within a new Next.js application for the creation of interactive pages based on markdown files generated by our technical writers. The compiler provided assistance and enforced stylistic conventions on the writers, transforming the files into React pages using MDX processing.",
+        "Led Tray Documentation’s transition from Gatsby to Next.js, implementing a custom compiler for generating interactive pages. This initiative enhanced the editing experience for technical writers and set stylistic standards. Simultaneously, restructured domains of the Tray App’s frontend architecture by segmenting monolithic libraries, boosting deployment efficiency.",
       ],
     },
     {
@@ -60,7 +58,7 @@ export const resumeSchema: ResumeSchema = {
       startDate: "June 2020",
       endDate: "Jan 2021",
       description: [
-        "Built an interactive map for the Web (React, TypeScript, RxJS, Redux), Android, and iOS (React Native) utilizing Mapbox and React Map GL. Created prototypes for each SDK provider (Google Maps, Mapbox, Leaflet) to evaluate performance and cost-effectiveness in relation to users' traffic. This ensured the adoption of a solution that delivered optimal performance and cost efficiency.",
+        "Developed an interactive map across Web, Android, and iOS platforms using Mapbox and React Map GL. Conducted SDK provider evaluations, considering user traffic, ensuring the selection of the most efficient and cost-effective solution.",
       ],
     },
     {
@@ -70,11 +68,11 @@ export const resumeSchema: ResumeSchema = {
       startDate: "Jun 2019",
       endDate: "Feb 2020",
       description: [
-        "Worked on Noble Vision, a Dashboard that allows analysts to view real-time threats within their network. Transitioned the application from a native desktop application built in Electron, to a web-based solution in React, Redux, TypeScript and GraphQL.",
+        "Contributed to Noble Vision, a real-time network threat dashboard. Shifted the application from an Electron-based desktop application to a web-based solution using React, Redux, TypeScript and GraphQL.",
       ],
     },
     {
-      companyName: "Hackney Council",
+      companyName: "London Borough of Hackney",
       title: "Software Developer",
       location: "London, United Kingdom",
       startDate: "Sep 2016",
