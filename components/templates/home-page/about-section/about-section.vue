@@ -21,12 +21,11 @@
       </BaseButtonLink>
       <div class="text-primary flex flex-col gap-y-8 text-lg">
         <p>
-          I am a highly skilled Technical Lead and Senior Frontend Engineer with
-          a proven track record of success in building rich user interfaces and
-          interactive web applications. With over 7 years of experience, I
-          specialize in translating interaction design and product concepts into
-          immersive experiences that prioritize usability, accessibility, and
-          inclusivity.
+          I am a Technical Lead and Senior Frontend Engineer with a proven track
+          record of success in building rich user interfaces and interactive web
+          applications. With over 7 years of experience, I specialize in
+          translating interaction design and product concepts into immersive
+          experiences that prioritize usability, accessibility, and inclusivity.
         </p>
 
         <p>
