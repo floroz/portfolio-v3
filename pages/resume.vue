@@ -120,9 +120,9 @@
         </div>
         <div class="flex w-full justify-center">
           <p class="mb-2 max-w-3xl text-sm italic">
-            I am a highly skilled Technical Lead and Senior Frontend Engineer
-            with 7+ years of experience and a proven track record of success in
-            building rich user interfaces and interactive web applications.
+            I am a Technical Lead and Senior Frontend Engineer with 7+ years of
+            experience and a proven track record of success in building rich
+            user interfaces and interactive web applications.
           </p>
         </div>
       </section>
