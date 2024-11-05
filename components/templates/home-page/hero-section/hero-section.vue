@@ -30,9 +30,10 @@
     </p>
     <!-- title -->
     <h1 class="text-gradient py-2 text-center text-4xl md:text-5xl">
-      I love building software, <br class="hidden md:inline-block" />leading
-      teams, and <br class="inline-block sm:hidden" />
-      creating <br class="hidden md:inline-block" />delightful experiences.
+      Crafting innovative software solutions
+      <br class="hidden md:inline-block" />that deliver exceptional user
+      experiences<br class="hidden md:inline-block" />and drive technical
+      excellence.
     </h1>
     <!-- CTA -->
     <BaseButtonLink
