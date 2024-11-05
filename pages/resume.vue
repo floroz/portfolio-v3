@@ -39,12 +39,12 @@
   const contactLinks = [
     {
       icon: "ant-design:mail-outlined",
-      href: "mailto:contact@danieletortora.com",
+      href: "mailto:",
       label: "Email",
     },
     {
       icon: "ant-design:link-outlined",
-      href: "https://www.danieletortora.com",
+      href: "https://danieletortora.netlify.app",
       label: "Portfolio",
     },
     {
@@ -62,14 +62,13 @@
   const skills = [
     "TypeScript",
     "JavaScript",
-    "HTML/CSS",
-    "React",
-    "Vue",
-    "Angular",
-    "Next.js",
+    "React/Vue/Angular",
     "Node.js",
-    "DevOps",
-    "Agile",
+    "PostgreSQL",
+    "MongoDB",
+    "Kubernetes",
+    "AWS",
+    "CI/CD",
   ];
 </script>
 
@@ -79,13 +78,13 @@
   >
     <main class="w-full max-w-4xl bg-white">
       <!-- HEADER -->
-      <header
-        class="relative mb-4 flex w-full flex-col items-center justify-center gap-0.5"
-      >
-        <h1 class="font-['Open_Sans'] text-2xl font-bold">Daniele Tortora</h1>
-        <h2 class="text-xl font-medium">
-          Techical Lead | Senior Frontend Engineer | UX/UI / Accessibility
-        </h2>
+      <header>
+        <div
+          class="relative mb-4 flex w-full items-center justify-center gap-0.5"
+        >
+          <h1 class="font-['Open_Sans'] text-2xl font-bold">Daniele Tortora</h1>
+          <h2 class="text-xl font-medium">| Senior Software Engineer</h2>
+        </div>
         <div class="flex flex-nowrap justify-center gap-2">
           <ul class="flex flex-wrap gap-2">
             <li
@@ -120,9 +119,8 @@
         </div>
         <div class="flex w-full justify-center">
           <p class="mb-2 max-w-3xl text-sm italic">
-            I am a Technical Lead and Senior Frontend Engineer with 7+ years of
-            experience and a proven track record of success in building rich
-            user interfaces and interactive web applications.
+            Software Engineer with 8 years of experience in frontend,
+            full-stack, and distributed systems.
           </p>
         </div>
       </section>
