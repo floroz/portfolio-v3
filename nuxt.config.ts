@@ -49,13 +49,13 @@ export default defineNuxtConfig({
         },
         {
           name: "og:image",
-          content: "https://www.danieletortora.com/images/twitter-card.png",
+          content: "https://danieletortora.netlify.app/images/twitter-card.png",
         },
         { name: "twitter:creator:id", content: "floroz87" },
         { name: "twitter:description", content: siteMetadata.pageDescription },
         {
           name: "twitter:image",
-          content: "https://www.danieletortora.com/images/twitter-card.png",
+          content: "https://danieletortora.netlify.app/images/twitter-card.png",
         },
         { name: "application-name", content: "@floroz/portfolio-v3" },
       ],
