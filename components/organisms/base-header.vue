@@ -8,8 +8,8 @@
       <ul class="flex h-full w-full items-center gap-x-6">
         <li class="text-primary grow">
           <NuxtLink
-            to="mailto:contact@danieletortora.com"
-            aria-label="Get in touch via email"
+            to="https://www.linkedin.com/in/danieletortora/"
+            aria-label="Get in touch via LinkedIn"
             class="text-primary animation-appear cursor-pointer opacity-0 hover:text-zinc-200"
           >
             <div class="flex items-center gap-2">
