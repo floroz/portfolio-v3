@@ -21,9 +21,8 @@
           v-for="desc in entry.description"
           :key="desc"
           class="list-item text-sm"
-        >
-          {{ desc }}
-        </li>
+          v-html="desc"
+        />
       </ul>
     </div>
   </div>

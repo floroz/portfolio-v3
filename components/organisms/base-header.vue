@@ -5,7 +5,7 @@
 <template>
   <header class="header-styled max-page-width border-b border-zinc-700">
     <nav>
-      <ul class="flex h-full w-full items-center gap-x-6">
+      <ul class="flex size-full items-center gap-x-6">
         <li class="text-primary grow">
           <NuxtLink
             to="https://www.linkedin.com/in/danieletortora/"

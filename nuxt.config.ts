@@ -3,16 +3,20 @@ import siteMetadata from "./config/site-metadata";
 export default defineNuxtConfig({
   // removed @nuxt/image-edge until this is fixed https://github.com/nuxt/image/issues/689
   modules: ["nuxt-icon", "nuxt-svgo"],
+
   css: ["~/assets/css/fonts.css", "~/assets/css/main.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   svgo: {
     defaultImport: "component",
   },
+
   app: {
     head: {
       htmlAttrs: {
@@ -61,4 +65,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: "2024-11-15",
 });
