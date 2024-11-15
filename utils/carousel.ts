@@ -4,7 +4,7 @@ import {
   onUnmounted,
   nextTick,
   markRaw,
-  DefineComponent,
+  type DefineComponent,
 } from "vue";
 import MetaLogo from "~/assets/svg/meta.svg";
 import TundraLogo from "~/assets/svg/tundra.svg";

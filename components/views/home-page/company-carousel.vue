@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { useCarousel } from "./carousel";
+  import { useCarousel } from "~/utils/carousel";
 
   const { carousel } = useCarousel();
 </script>

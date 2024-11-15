@@ -39,7 +39,7 @@
   const contactLinks = [
     {
       icon: "ant-design:mail-outlined",
-      href: "mailto:",
+      href: "mailto:tortora87@gmail.com",
       label: "Email",
     },
     {
@@ -61,12 +61,11 @@
 
   const skills = [
     "TypeScript",
-    "JavaScript",
     "React/Vue/Angular",
     "Node.js",
     "PostgreSQL",
-    "MongoDB",
     "Kubernetes",
+    "Docker",
     "AWS",
     "CI/CD",
   ];
@@ -102,7 +101,7 @@
       <!-- ABOUT -->
       <section class="mb-2 flex flex-col">
         <h3
-          class="mb-2 w-full border-b-[1px] border-b-gray-800 pb-2 text-base font-bold uppercase"
+          class="mb-2 w-full border-b border-b-gray-800 pb-2 text-base font-bold uppercase"
         >
           About
         </h3>
@@ -128,7 +127,7 @@
       <!-- WORK SECTION -->
       <section class="mb-4">
         <h3
-          class="mb-2 w-full border-b-[1px] border-b-gray-800 pb-2 text-base font-bold uppercase"
+          class="mb-2 w-full border-b border-b-gray-800 pb-2 text-base font-bold uppercase"
         >
           Work Experience
         </h3>
@@ -140,9 +139,7 @@
       </section>
       <!-- EDUCATION SECTION -->
       <section>
-        <h3
-          class="mb-2 border-b-[1px] border-b-gray-800 pb-2 font-bold uppercase"
-        >
+        <h3 class="mb-2 border-b border-b-gray-800 pb-2 font-bold uppercase">
           Education
         </h3>
         <div class="text-sm">

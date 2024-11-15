@@ -1,4 +1,4 @@
-import { ResumeSchema } from "types/resume";
+import type { ResumeSchema } from "../types/resume";
 
 export const resumeSchema: ResumeSchema = {
   work: [
@@ -9,7 +9,7 @@ export const resumeSchema: ResumeSchema = {
       startDate: "May 2024",
       endDate: "Present",
       description: [
-        "Work within Snyk's Open Source on the Gradle Scanner, a Software Composition Analysis (SCA) tool leveraging Static Analysis to identify vulnerabilities, produce remediations, and ensure secure dependency management. Collaborate with enterprise customers, analyzing patterns across ecosystems, programming languages, and build tools to optimize scan accuracy and remediation effectiveness.",
+        "Work within Snyk's Open Source on Deepcode AI, a Software Composition Analysis (SCA) tool leveraging Static Analysis to identify vulnerabilities, produce remediations, and ensure secure dependency management. Collaborate with enterprise customers, analyzing patterns across ecosystems, programming languages, and build tools to optimize scan accuracy and remediation effectiveness.",
         "Architected and deployed multiple microservices featuring REST APIs (JSON API, OpenAPI) and gRPC protocols, leveraging TypeScript, Node.js, and Express.js. Spearheaded the full development lifecycle—from CI/CD pipeline design using CircleCI to scalable deployments across AWS and GCP using Docker, Kubernetes, and ArgoCD—ensuring robust and reliable production environments.",
         "Enhanced SCA scanner performance through a Redis caching layer, concurrency optimizations for I/O-bound tasks, and Worker Threads for CPU-intensive processes. These enhancements significantly decreased scan processing times, improving throughput and response rates in high-demand scenarios.",
         "Designed and implemented a comprehensive data processing pipeline for ingesting scan results from Kubernetes Jobs, providing accuracy metrics that benchmark Snyk's scanner against open-source tools, ensuring high-quality scan outputs and actionable remediation insights for users.",
@@ -17,7 +17,7 @@ export const resumeSchema: ResumeSchema = {
     },
     {
       companyName: "Frontiers",
-      title: "Frontend Tech Lead",
+      title: "Technical Lead",
       location: "Zurich, Switzerland",
       startDate: "Feb 2023",
       endDate: "May 2024",
@@ -28,7 +28,7 @@ export const resumeSchema: ResumeSchema = {
       ],
     },
     {
-      companyName: "Meta / Facebook",
+      companyName: "Meta (Facebook)",
       title: "Frontend Engineer",
       location: "Zurich, Switzerland",
       startDate: "Jun 2022",
@@ -63,33 +63,15 @@ export const resumeSchema: ResumeSchema = {
       ],
     },
     {
-      companyName: "OVO",
-      title: "Frontend Engineer",
-      location: "London, United Kingdom",
-      startDate: "June 2020",
-      endDate: "Jan 2021",
-      description: [
-        "Developed an interactive map across Web, Android, and iOS using React, React Native, Mapbox and React Map GL.",
-      ],
-    },
-    {
-      companyName: "Noble",
-      title: "Frontend Engineer",
-      location: "London, United Kingdom",
-      startDate: "Jun 2019",
-      endDate: "Feb 2020",
-      description: [
-        "Contributed to the development of Noble Vision, a real-time network threat dashboard, transitioning the app from an Electron-based desktop application to a web-based solution using React, Redux, TypeScript, and GraphQL.",
-      ],
-    },
-    {
-      companyName: "London Borough of Hackney",
+      companyName: "OVO Energy | Noble Ltd | London Borough of Hackney",
       title: "Software Developer",
       location: "London, United Kingdom",
       startDate: "Sep 2016",
-      endDate: "Jun 2019",
+      endDate: "Jan 2021",
       description: [
-        "Hired as a self-taught Software Developer. Built web features using Angular, TypeScript, C#, and .NET Core",
+        "At <strong>OVO</strong>, I developed an interactive map across Web, Android, and iOS using React, React Native, Mapbox and React Map GL.",
+        "At <strong>Noble</strong>, I contributed to the development of Noble Vision, a real-time network threat dashboard, transitioning the app from an Electron-based desktop application to a web-based solution using React, Redux, TypeScript, and GraphQL.",
+        "At <strong>Hackney</strong>, I built web features using Angular, TypeScript, C#, and .NET Core",
       ],
     },
   ],
