@@ -6,12 +6,12 @@
 </script>
 
 <template>
-  <div class="mb-4 flex flex-col gap-y-1">
+  <div class="mb-2 flex flex-col">
     <div class="flex w-full justify-between">
       <p class="text-sm font-bold uppercase">{{ entry.companyName }}</p>
       <p class="font-bold">{{ entry.startDate }} - {{ entry.endDate }}</p>
     </div>
-    <div class="flex w-full justify-between italic">
+    <div class="flex w-full justify-between text-sm italic">
       <p>{{ entry.title }}{{ entry.isContract ? " (Contract)" : `` }}</p>
       <p>{{ entry.location }}</p>
     </div>
@@ -20,7 +20,7 @@
         <li
           v-for="desc in entry.description"
           :key="desc"
-          class="list-item text-sm"
+          class="list-item text-xs"
           v-html="desc"
         />
       </ul>
