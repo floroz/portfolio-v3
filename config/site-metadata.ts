@@ -1,6 +1,6 @@
 export default {
-  pageTitle: "Daniele Tortora | Technical Lead / Senior Frontend Engineer",
+  pageTitle: "Daniele Tortora | Software Engineer",
   pageDescription:
-    "I am a Technical Lead and Senior Frontend Engineer with a proven track record of success in building rich user interfaces and interactive web applications. With over 6 years of experience, I specialize in translating interaction design and product concepts into immersive experiences that prioritize usability, accessibility, and inclusivity.",
+    "Software Engineer with 8+ years of experience in frontend architecture and full-stack development, designing scalable UI component libraries, building data-intensive applications, developing distributed microservices, designing APIs (REST, GraphQL, gRPC), and deploying cloud-native solutions with Kubernetes and AWS.",
   siteUrl: "https://danieletortora.netlify.app",
 };
