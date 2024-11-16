@@ -45,7 +45,7 @@
     {
       icon: "ant-design:link-outlined",
       href: "https://danieletortora.netlify.app",
-      label: "Portfolio",
+      label: "Website",
     },
     {
       icon: "ant-design:github-outlined",
@@ -61,50 +61,42 @@
 
   const skills = [
     "TypeScript",
-    "React/Vue/Angular",
+    "React",
+    "Vue",
     "Node.js",
+    "REST",
+    "GraphQL",
+    "gRPC",
+    "Microservices",
     "PostgreSQL",
+    "Redis",
     "Kubernetes",
     "Docker",
     "AWS",
     "CI/CD",
+    "DevOps",
   ];
 </script>
 
 <template>
   <div
-    class="flex w-full flex-col items-center justify-center px-16 py-8 font-['Open_Sans'] text-base"
+    class="flex w-full flex-col items-center justify-center px-16 py-8 font-['Open_Sans']"
   >
     <main class="w-full max-w-4xl bg-white">
       <!-- HEADER -->
       <header>
-        <div
-          class="relative mb-4 flex w-full items-center justify-center gap-0.5"
-        >
+        <div class="relative flex w-full items-center justify-center gap-0.5">
           <h1 class="font-['Open_Sans'] text-2xl font-bold">Daniele Tortora</h1>
           <h2 class="text-xl font-medium">| Senior Software Engineer</h2>
-        </div>
-        <div class="flex flex-nowrap justify-center gap-2">
-          <ul class="flex flex-wrap gap-2">
-            <li
-              v-for="skill in skills"
-              :key="skill"
-              class="flex flex-row flex-nowrap items-center justify-center gap-x-1 text-sm"
-            >
-              <span>&bullet;</span>
-              <span>{{ skill }}</span>
-            </li>
-          </ul>
         </div>
       </header>
 
       <!-- ABOUT -->
       <section class="mb-2 flex flex-col">
-        <h3
-          class="mb-2 w-full border-b border-b-gray-800 pb-2 text-base font-bold uppercase"
-        >
-          About
-        </h3>
+        <h3 class="sr-only">About Me</h3>
+        <div
+          class="mb-2 w-full border-b border-b-gray-800 pb-2 font-bold uppercase"
+        />
         <!-- CONTACT LINS -->
         <div class="mb-4 flex w-full flex-wrap justify-between gap-x-2 gap-y-1">
           <div
@@ -116,10 +108,19 @@
             <a :href="link.href">{{ link.label }}</a>
           </div>
         </div>
-        <div class="flex w-full justify-center">
-          <p class="mb-2 max-w-3xl text-sm italic">
-            Software Engineer with 8 years of experience in frontend,
-            full-stack, and distributed systems.
+        <div class="grid place-items-center text-sm">
+          <div class="max-w-[45rem]">
+            <p class="mb-2">
+              Software Engineer with 8+ years of experience in frontend
+              architecture and full-stack development, designing scalable UI
+              component libraries, building data-intensive applications,
+              developing distributed microservices, designing APIs (REST,
+              GraphQL, gRPC), and deploying cloud-native solutions with
+              Kubernetes and AWS.
+            </p>
+          </div>
+          <p class="text-xs">
+            <span class="font-bold">Skills: </span>{{ skills.join(", ") }}
           </p>
         </div>
       </section>
@@ -127,7 +128,7 @@
       <!-- WORK SECTION -->
       <section class="mb-4">
         <h3
-          class="mb-2 w-full border-b border-b-gray-800 pb-2 text-base font-bold uppercase"
+          class="mb-2 w-full border-b border-b-gray-800 text-base font-bold uppercase"
         >
           Work Experience
         </h3>
@@ -139,7 +140,7 @@
       </section>
       <!-- EDUCATION SECTION -->
       <section>
-        <h3 class="mb-2 border-b border-b-gray-800 pb-2 font-bold uppercase">
+        <h3 class="mb-2 border-b border-b-gray-800 font-bold uppercase">
           Education
         </h3>
         <div class="text-sm">
