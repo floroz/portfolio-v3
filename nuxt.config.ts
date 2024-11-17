@@ -3,9 +3,8 @@ import siteMetadata from "./config/site-metadata";
 export default defineNuxtConfig({
   // removed @nuxt/image-edge until this is fixed https://github.com/nuxt/image/issues/689
   modules: ["nuxt-icon", "nuxt-svgo"],
-
+  ssr: true,
   css: ["~/assets/css/fonts.css", "~/assets/css/main.css"],
-
   postcss: {
     plugins: {
       tailwindcss: {},
