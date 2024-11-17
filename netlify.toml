@@ -1,0 +1,3 @@
+[build]
+    publish = ".nuxt"
+    command = "npm run build"
