@@ -21,15 +21,13 @@
       </BaseButtonLink>
       <div class="text-primary flex flex-col gap-y-8 text-lg">
         <p>
-          Software Engineer with 8+ years of experience delivering scalable,
-          high-performance systems and leading cross-functional teams.
-          Specializing in frontend architecture and full-stack development, I
-          craft intuitive, user-centric applications using modern frameworks
-          like React, Vue, and Angular. I’ve designed and implemented robust
-          component libraries and design systems that enhance consistency and
-          accelerate development across organizations.
+          Software Engineer with 8+ years of experience in frontend architecture
+          and full-stack development. I craft intuitive, user-centric
+          applications using modern frameworks like React, Vue, and Angular.
+          I’ve designed and implemented robust component libraries and design
+          systems that enhance consistency and accelerate development across
+          organizations.
         </p>
-
         <p>
           On the backend, I have extensive experience building distributed
           microservices, designing efficient APIs (REST, GraphQL, gRPC), and
