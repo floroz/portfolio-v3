@@ -20,7 +20,8 @@
       >
         <component
           :is="carouselItem.component"
-          :class="carouselItem.className"
+          :font-controlled="false"
+          :width="176"
         />
       </li>
     </TransitionGroup>

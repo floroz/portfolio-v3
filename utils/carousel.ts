@@ -12,44 +12,43 @@ import OvoLogo from "~/assets/svg/ovo.svg";
 import TrayLogo from "~/assets/svg/tray.svg";
 import HackneyLogo from "~/assets/svg/hackney.svg";
 import Frontiers from "~/assets/svg/frontiers.svg";
+import Snyk from "~/assets/svg/snyk.svg";
 
 export const useCarousel = () => {
   type CarouselItem = {
     id: string;
     component: any;
-    className: string;
   };
 
   const carousel = reactive<CarouselItem[]>([
     {
-      id: "Tundra",
-      className: "text-primary w-[11rem]",
-      component: markRaw(TundraLogo as unknown as DefineComponent),
-    },
-    {
-      id: "Meta",
-      className: "text-primary w-[11rem]",
-      component: markRaw(MetaLogo as unknown as DefineComponent),
-    },
-    {
-      id: "Frontiers",
-      className: "text-primary w-[11rem]",
-      component: markRaw(Frontiers as unknown as DefineComponent),
+      id: "Hackney",
+      component: markRaw(HackneyLogo as unknown as DefineComponent),
     },
     {
       id: "Ovo",
-      className: "text-primary w-[11rem]",
       component: markRaw(OvoLogo as unknown as DefineComponent),
     },
     {
-      id: "Tray",
-      className: "text-primary w-[11rem]",
-      component: markRaw(TrayLogo as unknown as DefineComponent),
+      id: "Frontiers",
+      component: markRaw(Frontiers as unknown as DefineComponent),
     },
     {
-      id: "Hackney",
-      className: "text-primary w-[11rem]",
-      component: markRaw(HackneyLogo as unknown as DefineComponent),
+      id: "Snyk",
+      component: markRaw(Snyk as unknown as DefineComponent),
+    },
+    {
+      id: "Meta",
+      component: markRaw(MetaLogo as unknown as DefineComponent),
+    },
+    {
+      id: "Tundra",
+      component: markRaw(TundraLogo as unknown as DefineComponent),
+    },
+
+    {
+      id: "Tray",
+      component: markRaw(TrayLogo as unknown as DefineComponent),
     },
   ]);
 
