@@ -1,11 +1,14 @@
 import type { ResumeSchema } from "../types/resume";
 
+export const headline =
+  "Experienced Software Engineer with over 8 years in the industry, specializing in full-stack development and cloud technologies. Proven track record of building interactive and performant user interfaces, platform and development tooling, data-intensive applications, robust APIs and scalable distributed services.";
+
 export const resumeSchema: ResumeSchema = {
   work: [
     {
       companyName: "Snyk",
       title: "Software Engineer",
-      location: "Zurich, Switzerland",
+      location: "Zurich, Switzerland - Hybrid",
       startDate: "May 2024",
       endDate: "Present",
       description: [
@@ -18,7 +21,7 @@ export const resumeSchema: ResumeSchema = {
     {
       companyName: "Frontiers",
       title: "Technical Lead",
-      location: "Zurich, Switzerland",
+      location: "Zurich, Switzerland - Hybrid",
       startDate: "Feb 2023",
       endDate: "May 2024",
       description: [
@@ -30,7 +33,7 @@ export const resumeSchema: ResumeSchema = {
     {
       companyName: "Meta (Facebook)",
       title: "Frontend Engineer",
-      location: "Zurich, Switzerland",
+      location: "Zurich, Switzerland - Hybrid",
       startDate: "Jun 2022",
       endDate: "Feb 2023",
       isContract: true,
@@ -44,7 +47,7 @@ export const resumeSchema: ResumeSchema = {
     {
       companyName: "Tundra",
       title: "Senior Frontend Engineer",
-      location: "Zurich, Switzerland",
+      location: "Zurich, Switzerland - Hybrid",
       startDate: "Nov 2021",
       endDate: "Jun 2022",
       description: [
@@ -55,7 +58,7 @@ export const resumeSchema: ResumeSchema = {
     {
       companyName: "Tray.ai",
       title: "Senior Frontend Engineer",
-      location: "Remote",
+      location: "London, UK - Remote",
       startDate: "Jan 2021",
       endDate: "Oct 2021",
       description: [
@@ -65,7 +68,7 @@ export const resumeSchema: ResumeSchema = {
     {
       companyName: "OVO Energy | Noble Ltd | London Borough of Hackney",
       title: "Software Developer",
-      location: "London, United Kingdom",
+      location: "London, UK - Hybrid",
       startDate: "Sep 2016",
       endDate: "Jan 2021",
       description: [
@@ -76,3 +79,44 @@ export const resumeSchema: ResumeSchema = {
     },
   ],
 };
+
+export const skillGroups: Array<{ groupName: string; skills: string[] }> = [
+  {
+    groupName: "Programming Languages",
+    skills: ["TypeScript", "JavaScript", "Node.js", "Go", "Golang", "PHP"],
+  },
+  {
+    groupName: "Web Technologies",
+    skills: [
+      "React",
+      "Next.js",
+      "Vue",
+      "Nuxt",
+      "Angular",
+      "HTML",
+      "CSS",
+      "Tailwind",
+    ],
+  },
+  {
+    groupName: "DevOps Tools",
+    skills: ["Docker", "Kubernetes", "CircleCI", "GitHub Actions", "Jenkins"],
+  },
+  {
+    groupName: "Database Systems",
+    skills: ["PostgreSQL", "MongoDB", "Redis"],
+  },
+  {
+    groupName: "Cloud Platforms",
+    skills: ["AWS", "Google Cloud Platform"],
+  },
+  {
+    groupName: "Soft Skills",
+    skills: [
+      "Communication",
+      "Problem-solving",
+      "Team Collaboration",
+      "Mentoring",
+    ],
+  },
+] as const;

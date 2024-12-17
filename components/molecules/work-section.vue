@@ -17,6 +17,7 @@
     </div>
     <div class="mt-2 flex w-full justify-center">
       <ul class="flex max-w-3xl list-outside list-disc flex-col gap-y-2">
+        <!-- Albeit unsafely injected - the text content injected in this `<li>` is hard-coded within this repository, and therefore there is concrete risk of XSS -->
         <li
           v-for="desc in entry.description"
           :key="desc"

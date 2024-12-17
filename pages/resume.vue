@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { resumeSchema } from "../config/resume-schema";
+  import { headline, resumeSchema, skillGroups } from "../config/resume-schema";
   import WorkSection from "../components/molecules/work-section.vue";
 
   useHead({
@@ -39,7 +39,7 @@
   const contactLinks = [
     {
       icon: "ant-design:mail-outlined",
-      href: "mailto:tortora87@gmail.com",
+      href: "mailto:danieletortora.contact@gmail.com",
       label: "Email",
     },
     {
@@ -57,24 +57,6 @@
       href: "https://www.google.com/maps/place/Zurich",
       label: "Zurich, Switzerland",
     },
-  ];
-
-  const skills = [
-    "TypeScript",
-    "React",
-    "Vue",
-    "Node.js",
-    "REST",
-    "GraphQL",
-    "gRPC",
-    "Microservices",
-    "PostgreSQL",
-    "Redis",
-    "Kubernetes",
-    "Docker",
-    "AWS",
-    "CI/CD",
-    "DevOps",
   ];
 </script>
 
@@ -111,17 +93,9 @@
         <div class="grid place-items-center text-sm">
           <div class="max-w-[45rem]">
             <p class="mb-2">
-              Software Engineer with 8+ years of experience in frontend
-              architecture and full-stack development, designing scalable UI
-              component libraries, building data-intensive applications,
-              developing distributed microservices, designing APIs (REST,
-              GraphQL, gRPC), and deploying cloud-native solutions with
-              Kubernetes and AWS.
+              {{ headline }}
             </p>
           </div>
-          <p class="text-xs">
-            <span class="font-bold">Skills: </span>{{ skills.join(", ") }}
-          </p>
         </div>
       </section>
 
@@ -139,7 +113,7 @@
         />
       </section>
       <!-- EDUCATION SECTION -->
-      <section>
+      <section class="mb-2">
         <h3 class="mb-2 border-b border-b-gray-800 font-bold uppercase">
           Education
         </h3>
@@ -170,6 +144,23 @@
             </div>
           </div>
         </div>
+      </section>
+      <!-- Skills -->
+      <section>
+        <h3 class="mb-2 border-b border-b-gray-800 font-bold uppercase">
+          Skills
+        </h3>
+        <ul class="text-xs grid grid-cols-2 gap-1">
+          <li
+            v-for="{ groupName, skills } in skillGroups"
+            :key="groupName"
+          >
+            <p>
+              <span class="font-bold">{{ groupName }}</span
+              >: {{ skills.join(", ") }}
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
   </div>

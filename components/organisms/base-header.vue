@@ -8,7 +8,7 @@
       <ul class="flex size-full items-center gap-x-6">
         <li class="text-primary grow">
           <NuxtLink
-            to="https://www.linkedin.com/in/danieletortora/"
+            to="mailto:danieletortora.contact@gmail.com"
             aria-label="Get in touch via LinkedIn"
             class="text-primary animation-appear cursor-pointer opacity-0 hover:text-zinc-200"
           >
