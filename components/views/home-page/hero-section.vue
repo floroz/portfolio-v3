@@ -10,15 +10,15 @@
     <!-- Current Issue in using this plugin in production: https://github.com/nuxt/image/issues/689#issuecomment-1455065750 -->
     <!-- <NuxtImg
       preload
-      src="/images/profilepic.jpeg"
+      src="/images/profilepic.jpg"
       width="180"
       height="180"
       class="rounded-full"
     /> -->
     <div class="overflow-hidden rounded-full">
       <img
-        src="/images/profilepic.jpeg"
-        class="aspect-square w-36 scale-125 rounded-full object-cover object-center"
+        src="/images/profilepic.jpg"
+        class="aspect-square w-60 rounded-full object-cover object-center md:w-80"
         alt="Profile Picture of Daniele Tortora"
       />
     </div>

@@ -12,10 +12,10 @@ export const resumeSchema: ResumeSchema = {
       startDate: "May 2024",
       endDate: "Present",
       description: [
-        "Work within Snyk's Open Source on Deepcode AI, a Software Composition Analysis (SCA) tool leveraging Static Analysis to identify vulnerabilities, produce remediations, and ensure secure dependency management. The scanner operates at scale, serving thousands of enterprise customers and processing millions of build and manifest files, optimizing scan accuracy and remediation effectiveness across diverse ecosystems, programming languages, and build tools.",
-        "Architected and deployed multiple microservices featuring REST APIs (JSON API, OpenAPI) and gRPC protocols, leveraging TypeScript, Node.js, and Express.js. Spearheaded the full development lifecycle—from CI/CD pipeline design using CircleCI to scalable deployments across AWS and GCP using Docker, Kubernetes, and ArgoCD—ensuring robust and reliable production environments.",
-        "Enhanced SCA scanner performance through a Redis caching layer, concurrency optimizations for I/O-bound tasks, and Worker Threads for CPU-intensive processes. These enhancements significantly decreased scan processing times, improving throughput and response rates in high-demand scenarios.",
-        "Designed and implemented a comprehensive data processing pipeline for ingesting scan results from Kubernetes Jobs, providing accuracy metrics that benchmark Snyk's scanner against open-source tools, ensuring high-quality scan outputs and actionable remediation insights for users.",
+        "Enhanced Snyk’s Open Source offering by designing and implementing features for Deepcode AI, a Software Composition Analysis (SCA) scanner leveraging Program Analysis techniques to identify vulnerabilities and provide remediation. The scanner processes and analyzes millions of build and manifest files from Gradle, Maven, and Pip ecosystems, serving thousands of enterprise customers with high accuracy and performance.",
+        "Developed and deployed Dockerized microservices using TypeScript, Node.js, and Express across multiple Kubernetes clusters (AWS, GCP) using Helm Charts. Implemented REST APIs adhering to JSON API and OpenAPI specifications, contributing to a distributed system that supports enterprise-scale workloads.",
+        "Collaborated with engineers across divisions to build a benchmarking service integrating existing scanners and open source tooling. Designed and developed a data processing pipeline to generate accuracy metrics from dependency graphs, enabling meaningful comparisons across tools. Provided data-driven insights that shaped internal team roadmaps and feature prioritization, amplifying the impact of cross-team collaboration.",
+        "Enhanced scanner performance by implementing a Redis caching layer, optimizing concurrency for I/O-bound tasks, and fine-tuning Worker Threads for CPU-intensive computations. These strategies, monitored using Datadog, Prometheus, and OpenTelemetry, significantly reduced scan processing times and improved throughput and response rates during high-demand scenarios.",
       ],
     },
     {
@@ -25,9 +25,9 @@ export const resumeSchema: ResumeSchema = {
       startDate: "Feb 2023",
       endDate: "May 2024",
       description: [
-        "Led a team of 6 developers in launching Brink UI, a Vue 3 Component Library built in TypeScript and aligned with our new Design System. In just 5 months, we progressed from inception to alpha, piloted across multiple projects. Adoption led to a 30% reduction in UI development time and improved cross-project consistency, streamlining component reuse and maintenance.",
-        "Served as the key individual for DevOps tasks within the team, implementing CI/CD with monorepo tooling (Lerna, NX, Node.js, GitHub Actions) and creating release pipelines (alpha, beta, stable) for efficient distribution through the NPM registry. Established a collaborative release review process with Designers and QAs, reducing defect rates and fostering quality-focused cross-functional teamwork.",
-        "Conducted extensive research into open-source libraries and build tooling to ensure compatibility across teams using frameworks like Vite, Nuxt.js, and Tailwind. Developed dedicated Storybook plugins with custom Vue templating syntax via AST parsing, enhancing authoring experience. Played a key role in Storybook roadmap discussions, identifying and addressing bugs in the Vue ecosystem.",
+        "Led a team of 6 developers in the development and launch of Brink UI, a Vue 3 Component Library built in TypeScript, aligned with a new Design System. Delivered the library from inception to alpha within 5 months, piloted across multiple projects. The library’s adoption reduced UI development time by 30%, while enhancing cross-project consistency and streamlining component reuse and maintenance.",
+        "Led DevOps efforts within the team, implementing CI/CD pipelines using monorepo tooling (Lerna, NX, Node.js, GitHub Actions) and streamlining release processes (alpha, beta, stable) for efficient distribution via the NPM registry. Established a collaborative release review process with Designers and QAs, reducing defect rates and enhancing cross-functional teamwork focused on quality.",
+        "Conducted research into open-source libraries and build tooling to ensure compatibility with frameworks such as Vite, Nuxt.js, and Tailwind. Developed custom Storybook plugins using AST parsing to enhance the Vue authoring experience. Contributed to the Storybook roadmap, identifying and addressing key bugs within the Vue ecosystem.",
       ],
     },
     {
@@ -38,10 +38,9 @@ export const resumeSchema: ResumeSchema = {
       endDate: "Feb 2023",
       isContract: true,
       description: [
-        "Collaborated with the Mapillary team, a startup acquired by Meta, to integrate their platforms and infrastructure into Meta’s ecosystem. Developed a strategic roadmap for gradual migration and worked closely with stakeholders to identify effective solutions.",
-        "Partnered with Facebook and Instagram Design System teams to explore deploying an independent Design System/Component Library tailored to Mapillary products, with potential for a Headless system based on Facebook’s library.",
-        "Steered the rewrite of the Mapillary website, migrating from Next.js to React, PHP and Facebook CMS, achieving a 36% improvement in Accessibility, 17% boost in Performance, and 25% increase in SEO scores. Enhanced Core Web Vitals, achieving a 20% reduction in FCP and a 60% reduction in LCP, significantly improving user experience.",
-        "Championed the implementation of internationalization (i18n) for Mapillary web apps (Angular, TypeScript), enabling efficient localization across 24 languages.",
+        "Collaborated with the Mapillary team (acquired by Meta) to integrate their platforms and infrastructure into Meta’s ecosystem. Developed a strategic roadmap for the gradual migration and worked closely with stakeholders to identify and implement effective solutions.",
+        "Partnered with the Facebook and Instagram Design System teams to explore the deployment of an independent Design System/Component Library tailored for Mapillary products, with a potential Headless system based on Facebook’s library.",
+        "Led the rewrite of the Mapillary website, migrating from Next.js to React, PHP, and Facebook CMS. Achieved a 36% improvement in Accessibility, a 17% boost in Performance, and a 25% increase in SEO scores. Enhanced Core Web Vitals, reducing First Contentful Paint (FCP) by 20% and Largest Contentful Paint (LCP) by 60%, significantly improving user experience. Spearheaded the implementation of internationalization (i18n) for Mapillary web apps (Angular, TypeScript), enabling localization across 24 languages to improve accessibility and reach.",
       ],
     },
     {
