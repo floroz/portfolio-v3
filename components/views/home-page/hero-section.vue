@@ -30,10 +30,10 @@
     </p>
     <!-- title -->
     <h1 class="text-gradient py-2 text-center text-4xl md:text-5xl">
-      Crafting innovative software solutions
-      <br class="hidden md:inline-block" />that deliver exceptional user
-      experiences<br class="hidden md:inline-block" />and drive technical
-      excellence.
+      I love solving problems
+      <br class="hidden md:inline-block" />and building software.<br
+        class="hidden md:inline-block"
+      />
     </h1>
     <!-- CTA -->
     <BaseButtonLink

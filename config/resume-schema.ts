@@ -82,25 +82,24 @@ export const resumeSchema: ResumeSchema = {
 
 export const skillGroups: Array<{ groupName: string; skills: string[] }> = [
   {
-    groupName: "Programming Languages",
-    skills: ["TypeScript", "JavaScript", "Node.js", "Go", "Golang", "PHP"],
+    groupName: "Languages",
+    skills: ["TypeScript", "JavaScript", "Go", "PHP", "HTML", "CSS"],
   },
   {
     groupName: "Web Technologies",
     skills: [
       "React",
+      "Node.js",
       "Next.js",
+      "Express",
       "Vue",
-      "Nuxt",
       "Angular",
-      "HTML",
-      "CSS",
-      "Tailwind",
+      "GraphQL",
     ],
   },
   {
     groupName: "DevOps Tools",
-    skills: ["Docker", "Kubernetes", "CircleCI", "GitHub Actions", "Jenkins"],
+    skills: ["Docker", "Kubernetes", "Helm", "CircleCI", "GitHub Actions"],
   },
   {
     groupName: "Database Systems",
