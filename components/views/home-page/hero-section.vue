@@ -1,5 +1,17 @@
 <script setup lang="ts">
   import BaseButtonLink from "~~/components/atoms/base-button-link/base-button-link.vue";
+
+  function trackCheckMyWorkClick() {
+    if (typeof window === "undefined" || typeof window.gtag !== "function") {
+      // eslint-disable-next-line no-console
+      console.warn("GA not initialized yet.");
+    } else {
+      window.gtag("event", "button_click", {
+        event_category: "user_interaction",
+        event_label: "check_work_button",
+      });
+    }
+  }
 </script>
 
 <template>
@@ -39,6 +51,7 @@
     <BaseButtonLink
       href="https://github.com/floroz"
       target="_blank"
+      @click="trackCheckMyWorkClick"
       ><template #default>Check my work</template>
       <template #icon-right>
         <Icon

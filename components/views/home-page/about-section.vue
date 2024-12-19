@@ -1,6 +1,18 @@
 <script setup lang="ts">
   import BaseButtonLink from "~~/components/atoms/base-button-link/base-button-link.vue";
   import { headline } from "~/config/resume-schema";
+
+  function trackDownloadClick() {
+    if (typeof window === "undefined" || typeof window.gtag !== "function") {
+      // eslint-disable-next-line no-console
+      console.warn("GA not initialized yet.");
+    } else {
+      window.gtag("event", "button_click", {
+        event_category: "user_interaction",
+        event_label: "download_resume_button",
+      });
+    }
+  }
 </script>
 
 <template>
@@ -17,6 +29,7 @@
       <BaseButtonLink
         external
         href="/pdf/resume.pdf"
+        @click="trackDownloadClick"
         >Download my resume
         <template #icon-right>
           <Icon

@@ -1,5 +1,17 @@
 <script setup lang="ts">
   import SocialLinks from "~/components/molecules/social-links.vue";
+
+  function trackContactClick() {
+    if (typeof window === "undefined" || typeof window.gtag !== "function") {
+      // eslint-disable-next-line no-console
+      console.warn("GA not initialized yet.");
+    } else {
+      window.gtag("event", "button_click", {
+        event_category: "user_interaction",
+        event_label: "get_in_touch_button",
+      });
+    }
+  }
 </script>
 <!-- eslint-disable tailwindcss/no-custom-classname -->
 <template>
@@ -11,6 +23,7 @@
             to="mailto:danieletortora.contact@gmail.com"
             aria-label="Get in touch via LinkedIn"
             class="text-primary animation-appear cursor-pointer opacity-0 hover:text-zinc-200"
+            @click="trackContactClick"
           >
             <div class="flex items-center gap-2">
               <div class="rounded-full bg-zinc-800 p-4">
