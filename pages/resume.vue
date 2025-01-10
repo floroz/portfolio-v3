@@ -53,6 +53,11 @@
       label: "GitHub",
     },
     {
+      icon: "ant-design:linkedin-outlined",
+      href: "https://www.linkedin.com/in/danieletortora/",
+      label: "LinkedIn",
+    },
+    {
       icon: "ant-design:environment-outlined",
       href: "https://www.google.com/maps/place/Zurich",
       label: "Zurich, Switzerland",
@@ -87,6 +92,7 @@
             class="flex flex-row items-center justify-center gap-x-1 text-sm font-bold"
           >
             <Icon :name="link.icon" />
+            <span class="sr-only">{{ link.label }}: {{ link.href }}</span>
             <a :href="link.href">{{ link.label }}</a>
           </div>
         </div>
