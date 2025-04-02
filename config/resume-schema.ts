@@ -1,7 +1,7 @@
 import type { ResumeSchema } from "../types/resume";
 
 export const headline =
-  "Experienced Software Engineer with over 8 years in the industry, specializing in full-stack development and cloud technologies. Proven track record of building interactive and performant user interfaces, platform and development tooling, data-intensive applications, robust APIs and scalable distributed services.";
+  "Senior Software Engineer with over 8 years in the industry, specializing in UX/UI, full-stack development and cloud technologies. Proven track record of building interactive and performant user interfaces, platform and development tooling, data-intensive applications, robust APIs and scalable distributed services.";
 
 export const resumeSchema: ResumeSchema = {
   work: [
@@ -101,8 +101,8 @@ export const skillGroups: Array<{ groupName: string; skills: string[] }> = [
     skills: ["Docker", "Kubernetes", "Helm", "CircleCI", "GitHub Actions"],
   },
   {
-    groupName: "Database Systems",
-    skills: ["PostgreSQL", "MongoDB", "Redis"],
+    groupName: "Database Systems & Messaging",
+    skills: ["PostgreSQL", "MongoDB", "Redis", "Kafka", "NATS"],
   },
   {
     groupName: "Cloud Platforms",
