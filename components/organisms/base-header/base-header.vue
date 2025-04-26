@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import SocialLinks from "~/components/molecules/social-links.vue";
+  import SocialLinks from "~/components/molecules/social-links/social-links.vue";
 
   function trackContactClick() {
     if (typeof window === "undefined" || typeof window.gtag !== "function") {

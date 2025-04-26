@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { headline, resumeSchema, skillGroups } from "../config/resume-schema";
-  import WorkSection from "../components/molecules/work-section.vue";
+  import WorkSection from "../components/molecules/work-section/work-section.vue";
 
   useHead({
     link: [

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import BaseFooter from "~~/components/organisms/base-footer.vue";
-  import BaseHeader from "~~/components/organisms/base-header.vue";
+  import BaseFooter from "~~/components/organisms/base-footer/base-footer.vue";
+  import BaseHeader from "~~/components/organisms/base-header/base-header.vue";
 
   useHead({
     script: [
