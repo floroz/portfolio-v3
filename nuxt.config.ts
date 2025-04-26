@@ -1,7 +1,7 @@
 import siteMetadata from "./config/site-metadata";
 // eslint-disable-next-line @typescript-eslint/no-unsafe-call
 export default defineNuxtConfig({
-  modules: ["nuxt-icon", "nuxt-svgo", "@nuxt/image"],
+  modules: ["nuxt-icon", "nuxt-svgo", "@nuxt/image", "nuxt-gtag"],
   ssr: true,
   css: ["~/assets/css/fonts.css", "~/assets/css/main.css"],
   postcss: {
@@ -13,6 +13,10 @@ export default defineNuxtConfig({
 
   svgo: {
     defaultImport: "component",
+  },
+
+  gtag: {
+    id: "G-86J1F6NHN7",
   },
 
   app: {
