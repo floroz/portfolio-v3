@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import BaseButtonLink from "~~/components/atoms/base-button-link/base-button-link.vue";
+  import BaseButtonLink from "~/components/atoms/base-button-link/base-button-link.vue";
 
   function trackCheckMyWorkClick() {
     if (typeof window === "undefined" || typeof window.gtag !== "function") {

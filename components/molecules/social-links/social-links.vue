@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { SOCIAL_LINKS } from "~~/constants/social-links";
+  import { SOCIAL_LINKS } from "~/constants/social-links";
 
   defineProps<{
     animate?: boolean;

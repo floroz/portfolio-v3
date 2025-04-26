@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import type { WorkEntry } from "../../types/resume";
+  import type { WorkEntry } from "../../../types/resume";
   defineProps<{
     entry: WorkEntry;
   }>();
