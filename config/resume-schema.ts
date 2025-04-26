@@ -1,7 +1,7 @@
 import type { ResumeSchema } from "../types/resume";
 
 export const headline =
-  "Senior Software Engineer with over 8 years in the industry, specializing in building user-centric and performant applications across the full stack. Leveraging a strong analytical background, I have a proven track record in UX/UI, platform and development tooling, data-intensive applications, robust APIs, and scalable distributed services.";
+  "Senior Software Engineer with 8+ years of experience delivering modern frontend applications, designing robust APIs, and building scalable, distributed backend systems. Passionate about creating user-centric experiences and data-driven platforms across the full stack.";
 
 export const resumeSchema: ResumeSchema = {
   work: [
