@@ -1,7 +1,7 @@
 import type { ResumeSchema } from "../types/resume";
 
 export const headline =
-  "Senior Software Engineer with over 8 years in the industry, specializing in UX/UI, full-stack development and cloud technologies. Proven track record of building interactive and performant user interfaces, platform and development tooling, data-intensive applications, robust APIs and scalable distributed services.";
+  "Senior Software Engineer with over 8 years in the industry, specializing in building user-centric and performant applications across the full stack. Leveraging a strong analytical background, I have a proven track record in UX/UI, platform and development tooling, data-intensive applications, robust APIs, and scalable distributed services.";
 
 export const resumeSchema: ResumeSchema = {
   work: [
@@ -71,9 +71,9 @@ export const resumeSchema: ResumeSchema = {
       startDate: "Sep 2016",
       endDate: "Jan 2021",
       description: [
-        "At <strong>OVO</strong>, I developed an interactive map across Web, Android, and iOS using React, React Native, Mapbox and React Map GL.",
-        "At <strong>Noble</strong>, I contributed to the development of Noble Vision, a real-time network threat dashboard, transitioning the app from an Electron-based desktop application to a web-based solution using React, Redux, TypeScript, and GraphQL.",
-        "At <strong>Hackney</strong>, I built web features using Angular, TypeScript, C#, and .NET Core",
+        "At OVO, I developed an interactive map across Web, Android, and iOS using React, React Native, Mapbox and React Map GL.",
+        "At Noble, I contributed to the development of Noble Vision, a real-time network threat dashboard, transitioning the app from an Electron-based desktop application to a web-based solution using React, Redux, TypeScript, and GraphQL.",
+        "At Hackney, I built web features using Angular, TypeScript, C#, and .NET Core",
       ],
     },
   ],
