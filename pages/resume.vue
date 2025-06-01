@@ -1,5 +1,10 @@
 <script setup lang="ts">
-  import { headline, resumeSchema, skillGroups } from "../config/resume-schema";
+  import {
+    headline,
+    resumeSchema,
+    skillGroups,
+    title,
+  } from "../config/resume-schema";
   import WorkSection from "../components/molecules/work-section/work-section.vue";
 
   useHead({
@@ -58,7 +63,7 @@
       <header>
         <div class="relative flex w-full items-center justify-center gap-0.5">
           <h1 class="font-['Open_Sans'] text-2xl font-bold">Daniele Tortora</h1>
-          <h2 class="text-xl font-medium">| Senior Software Engineer</h2>
+          <h2 class="text-xl font-medium">| {{ title }}</h2>
         </div>
       </header>
 
