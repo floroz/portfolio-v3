@@ -1,7 +1,8 @@
 import type { ResumeSchema } from "../types/resume";
 
-export const headline =
-  "Senior Software Engineer with 8+ years of experience delivering modern frontend applications, designing robust APIs, and building scalable, distributed backend systems. Passionate about creating user-centric experiences and data-driven platforms across the full stack.";
+export const title = `Senior Frontend Engineer`;
+
+export const headline = `${title} with with 8+ years of experience specializing in building scalable frontend platforms, reusable UI component libraries, and performance-critical applications. Passionate about enhancing developer experience, designing robust APIs, and driving UI consistency across large-scale, distributed systems.`;
 
 export const resumeSchema: ResumeSchema = {
   work: [
@@ -20,12 +21,12 @@ export const resumeSchema: ResumeSchema = {
     },
     {
       companyName: "Frontiers",
-      title: "Technical Lead",
+      title: "Frontend Tech Lead",
       location: "Zurich, Switzerland - Hybrid",
       startDate: "Feb 2023",
       endDate: "May 2024",
       description: [
-        "Led a team of 6 developers in the development and launch of Brink UI, a Vue 3 Component Library built in TypeScript, aligned with a new Design System. Delivered the library from inception to alpha within 5 months, piloted across multiple projects. The library’s adoption reduced UI development time by 30%, while enhancing cross-project consistency and streamlining component reuse and maintenance.",
+        "Led a team of 6 developers fostering their growth through direct mentorship, code reviews, and collaborative design sessions, in the development and launch of Brink UI, a Vue 3 Component Library built in TypeScript, aligned with a new Design System. Delivered the library from inception to alpha within 5 months, piloted across multiple projects. The library’s adoption reduced UI development time by 30%, while enhancing cross-project consistency and streamlining component reuse and maintenance.",
         "Led DevOps efforts within the team, implementing CI/CD pipelines using monorepo tooling (Lerna, NX, Node.js, GitHub Actions) and streamlining release processes (alpha, beta, stable) for efficient distribution via the NPM registry. Established a collaborative release review process with Designers and QAs, reducing defect rates and enhancing cross-functional teamwork focused on quality.",
         "Conducted research into open-source libraries and build tooling to ensure compatibility with frameworks such as Vite, Nuxt.js, and Tailwind. Developed custom Storybook plugins using AST parsing to enhance the Vue authoring experience. Contributed to the Storybook roadmap, identifying and addressing key bugs within the Vue ecosystem.",
       ],
