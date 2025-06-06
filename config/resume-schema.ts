@@ -1,20 +1,21 @@
 import type { ResumeSchema } from "../types/resume";
 
-export const headline =
-  "Senior Software Engineer with 8+ years of experience delivering modern frontend applications, designing robust APIs, and building scalable, distributed backend systems. Passionate about creating user-centric experiences and data-driven platforms across the full stack.";
+export const title = `Senior Software Engineer`;
+
+export const headline = `${title} with 8+ years of experience delivering modern frontend applications, designing robust APIs, and building scalable, distributed backend systems. A GenAI enthusiast passionate about creating user-centric experiences and data-driven platforms across the full stack.`;
 
 export const resumeSchema: ResumeSchema = {
   work: [
     {
       companyName: "Snyk",
-      title: "Software Engineer",
+      title: "Full Stack Engineer",
       location: "Zurich, Switzerland - Hybrid",
       startDate: "May 2024",
       endDate: "Present",
       description: [
-        "Enhanced Snyk’s Open Source offering by designing and implementing features for Deepcode AI, a Software Composition Analysis (SCA) scanner leveraging Program Analysis techniques to identify vulnerabilities and provide remediation. The scanner processes and analyzes millions of build and manifest files from Gradle, Maven, and Pip ecosystems, serving thousands of enterprise customers with high accuracy and performance.",
-        "Developed and deployed Dockerized microservices using TypeScript, Node.js, and Express across multiple Kubernetes clusters (AWS, GCP) using Helm Charts. Implemented REST APIs adhering to JSON API and OpenAPI specifications, contributing to a distributed system that supports enterprise-scale workloads.",
-        "Collaborated with engineers across divisions to build a benchmarking service integrating existing scanners and open source tooling. Designed and developed a data processing pipeline to generate accuracy metrics from dependency graphs, enabling meaningful comparisons across tools. Provided data-driven insights that shaped internal team roadmaps and feature prioritization, amplifying the impact of cross-team collaboration.",
+        "Led UI development for a strategic 2025 initiative, delivering a new web interface enabling enterprise customers to define custom SAST sanitizers. Orchestrated cross-team collaboration with product, designers and backend engineers and managed the complete UI development lifecycle (planning, organization, execution) using Vue 3, TypeScript, Vite, Vitest, Playwright, and Storybook.",
+        "Championed company-wide AI adoption, participating in internal trials of cutting-edge GenAI tools (e.g., Gemini, Claude, Windsurf, Cursor). Delivered company-wide presentations illustrating how GenAI-enhanced workflows can significantly boost team and developer productivity.",
+        "Enhanced Snyk’s Open Source offering by designing and implementing features for Deepcode AI, a Software Composition Analysis (SCA) scanner leveraging Program Analysis techniques. Developed and deployed Dockerized microservices using Golang, TypeScript, and Node.js across multiple Kubernetes clusters (AWS, GCP) using Helm Charts, and implemented REST APIs adhering to JSON API specifications.",
         "Enhanced scanner performance by implementing a Redis caching layer, optimizing concurrency for I/O-bound tasks, and fine-tuning Worker Threads for CPU-intensive computations. These strategies, monitored using Datadog, Prometheus, and OpenTelemetry, significantly reduced scan processing times and improved throughput and response rates during high-demand scenarios.",
       ],
     },

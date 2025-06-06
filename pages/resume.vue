@@ -1,5 +1,10 @@
 <script setup lang="ts">
-  import { headline, resumeSchema, skillGroups } from "../config/resume-schema";
+  import {
+    headline,
+    resumeSchema,
+    skillGroups,
+    title,
+  } from "../config/resume-schema";
   import WorkSection from "../components/molecules/work-section/work-section.vue";
 
   useHead({
@@ -58,7 +63,7 @@
       <header>
         <div class="relative flex w-full items-center justify-center gap-0.5">
           <h1 class="font-['Open_Sans'] text-2xl font-bold">Daniele Tortora</h1>
-          <h2 class="text-xl font-medium">| Senior Software Engineer</h2>
+          <h2 class="text-xl font-medium">| {{ title }}</h2>
         </div>
       </header>
 
@@ -140,7 +145,7 @@
         <h3 class="mb-2 border-b border-b-gray-800 font-bold uppercase">
           Skills
         </h3>
-        <ul class="text-xs grid grid-cols-2 gap-1">
+        <ul class="grid grid-cols-2 gap-1 text-xs">
           <li
             v-for="{ groupName, skills } in skillGroups"
             :key="groupName"
