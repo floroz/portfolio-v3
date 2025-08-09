@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import BaseButtonLink from "~/components/atoms/base-button-link/base-button-link.vue";
-  import { headline } from "~/config/resume-schema";
+  import { headline, headline2 } from "~/config/resume-schema";
 
   function trackDownloadClick() {
     if (typeof window === "undefined" || typeof window.gtag !== "function") {
@@ -24,6 +24,9 @@
       <div class="text-primary flex flex-col gap-y-8 text-lg">
         <p>
           {{ headline }}
+        </p>
+        <p>
+          {{ headline2 }}
         </p>
       </div>
       <BaseButtonLink

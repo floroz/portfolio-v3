@@ -1,8 +1,10 @@
 import type { ResumeSchema } from "../types/resume";
 
-export const title = `Senior Software Engineer`;
+export const title = `Senior Software Engineer (UX/UI & AI)`;
 
-export const headline = `${title} with 8+ years of experience delivering modern frontend applications, designing robust APIs, and building scalable, distributed backend systems. A GenAI enthusiast passionate about creating user-centric experiences and data-driven platforms across the full stack.`;
+export const headline = `As a software engineer with over 8 years of experience, I've built my career on a core belief: that the most powerful systems are defined by their human experience. This principle, shaped by my background in psychology, drives me to bridge the divide between complex software architecture and elegant, intuitive user interfaces.`;
+
+export const headline2 = `I put this philosophy into practice across the full stack by delivering modern frontend applications, designing robust APIs, and building the scalable, distributed backend systems that power them. I am now keenly focused on applying this user-centric approach to the world of AI, ensuring that intelligent systems are not only powerful but also accessible and intuitive.`;
 
 export const resumeSchema: ResumeSchema = {
   work: [
@@ -13,16 +15,16 @@ export const resumeSchema: ResumeSchema = {
       startDate: "May 2024",
       endDate: "Present",
       description: [
-        "Led UI development for a strategic 2025 initiative, delivering a new web interface enabling enterprise customers to define custom SAST sanitizers. Orchestrated cross-team collaboration with product, designers and backend engineers and managed the complete UI development lifecycle (planning, organization, execution) using Vue 3, TypeScript, Vite, Vitest, Playwright, and Storybook.",
-        "Championed company-wide AI adoption, participating in internal trials of cutting-edge GenAI tools (e.g., Gemini, Claude, Windsurf, Cursor). Delivered company-wide presentations illustrating how GenAI-enhanced workflows can significantly boost team and developer productivity.",
-        "Enhanced Snyk’s Open Source offering by designing and implementing features for Deepcode AI, a Software Composition Analysis (SCA) scanner leveraging Program Analysis techniques. Developed and deployed Dockerized microservices using Golang, TypeScript, and Node.js across multiple Kubernetes clusters (AWS, GCP) using Helm Charts, and implemented REST APIs adhering to JSON API specifications.",
-        "Enhanced scanner performance by implementing a Redis caching layer, optimizing concurrency for I/O-bound tasks, and fine-tuning Worker Threads for CPU-intensive computations. These strategies, monitored using Datadog, Prometheus, and OpenTelemetry, significantly reduced scan processing times and improved throughput and response rates during high-demand scenarios.",
+        "Led UI development for a strategic 2025 initiative, delivering an AI-assisted web interface enabling enterprise customers to define custom SAST sanitizers. This self-service solution saved security teams hundreds of hours previously spent on manual sanitizer implementation. Orchestrated cross-team collaboration and managed complete UI development lifecycle using Vue 3, TypeScript, and modern tooling.",
+        "Championed company-wide AI adoption, participating in internal trials of cutting-edge GenAI tools (e.g., Gemini, Claude, Windsurf, Cursor, Agentic Workflows). Delivered company-wide presentations and produced comprehensive training materials on GenAI-enhanced workflows, enabling developers across the organization to significantly increase their productivity.",
+        "Enhanced Snyk's Open Source offering by designing and implementing AI-powered features for Deepcode AI, a Software Composition Analysis engine serving 500K+ daily scans. Architected and deployed scalable microservices using Golang, TypeScript, and Node.js across multiple Kubernetes clusters (AWS, GCP)",
+        "Architected a distributed performance optimization strategy for Deepcode AI's analysis engine, designing a multi-tiered caching architecture that reduced p95 latency by 65% and enabled 3x throughput scaling. Led cross-functional initiative to establish SLOs and implement comprehensive observability (Datadog, Prometheus, OpenTelemetry), resulting in 99.9% uptime for enterprise customers.",
       ],
     },
     {
       companyName: "Frontiers",
       title: "Technical Lead",
-      location: "Zurich, Switzerland - Hybrid",
+      location: "Zurich, Switzerland - Remote",
       startDate: "Feb 2023",
       endDate: "May 2024",
       description: [
@@ -62,7 +64,7 @@ export const resumeSchema: ResumeSchema = {
       startDate: "Jan 2021",
       endDate: "Oct 2021",
       description: [
-        "Led the transition of Tray Documentation from Gatsby to Next.js, creating a custom compiler for interactive page generation. This improved the editing experience for technical writers and set new stylistic standards.",
+        "Led the transition of Tray Documentation from Gatsby to Next.js, creating a custom compiler for interactive page generation. This improved content publishing time by 60% for technical writers and increased documentation engagement by 45% through enhanced interactivity and search capabilities.",
       ],
     },
     {
@@ -95,6 +97,28 @@ export const skillGroups: Array<{ groupName: string; skills: string[] }> = [
       "Vue",
       "Angular",
       "GraphQL",
+    ],
+  },
+  {
+    groupName: "AI & Machine Learning",
+    skills: [
+      "Cursor",
+      "Gemini",
+      "Claude",
+      "OpenAI APIs",
+      "Prompt Engineering",
+      "Agentic Systems",
+    ],
+  },
+  {
+    groupName: "UX/UI & Design Systems",
+    skills: [
+      "Storybook",
+      "Component Libraries",
+      "Design Systems",
+      "Figma",
+      "Accessibility (WCAG)",
+      "Core Web Vitals",
     ],
   },
   {

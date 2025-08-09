@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import {
     headline,
+    headline2,
     resumeSchema,
     skillGroups,
     title,
@@ -89,6 +90,9 @@
           <div class="max-w-[45rem]">
             <p class="mb-2">
               {{ headline }}
+            </p>
+            <p class="mb-2">
+              {{ headline2 }}
             </p>
           </div>
         </div>
